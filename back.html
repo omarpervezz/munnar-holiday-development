@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- SEO Meta -->
+    <title>Munnar Holidays</title>
+    <meta name="description" content="Short description of your webpage." />
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="Munnar Holidays" />
+    <meta property="og:description" content="Munnar Holidays" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/images/social-preview.jpg" />
+    <meta property="og:url" content="https://yourdomain.com" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Munnar Holidays" />
+    <meta
+      name="twitter:description"
+      content="Short description of your webpage."
+    />
+    <meta name="twitter:image" content="/assets/images/social-preview.jpg" />
+
+    <!-- Favicon / App Icons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="../assets/images/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="../assets/images/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="../assets/images/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../assets/images/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="../assets/images/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="../assets/images/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/images/favicon/apple-icon-180x180.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../assets/images/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../assets/images/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/images/favicon/favicon-16x16.png"
+    />
+
+    <link rel="manifest" href="../assets/images/favicon/site.webmanifest" />
+
+    <!-- Microsoft Tiles -->
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="../assets/images/favicon/ms-icon-144x144.png"
+    />
+    <!-- Main Favicon -->
+    <link
+      rel="shortcut icon"
+      href="../assets/images/favicon/favicon-32x32.png"
+    />
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+
+  <body class="bg-white antialiased">
+    <!-- ============================
+         TOP NAVBAR
+         ============================ -->
+    <header class="w-full bg-white">
+      <div
+        class="w-full mx-auto lg:max-w-7xl flex max-w-6xl items-center justify-between px-8 py-4"
+      >
+        <!-- ========== BRAND / LOGO ========== -->
+        <a
+          href="/"
+          class="flex items-center gap-2"
+          aria-label="Munnar Holiday – Home"
+        >
+          <!-- Use your logo file here -->
+          <img
+            src="../assets/images/logo.png"
+            alt="Munnar Holiday"
+            class="h-7 w-auto"
+          />
+        </a>
+
+        <!-- ========== CENTER NAV LINKS ========== -->
+        <nav
+          class="flex flex-1 items-center justify-center gap-10 text-[13px] font-medium text-neutral-800"
+          aria-label="Main navigation"
+        >
+          <!-- ========== HOME ICON ========== -->
+          <a href="/" class="flex items-center hover:text-neutral-950">
+            <img
+              src="../assets/icon/home.png"
+              alt="Home Icon"
+              class="h-4 w-4 object-contain"
+            />
+          </a>
+
+          <!-- ========== MUNNAR TOURS (ONLY ITEM WITH ICON CHANGE) ========== -->
+          <button
+            type="button"
+            class="relative inline-flex flex-col items-center group cursor-pointer"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <div class="flex items-center gap-1 group-hover:text-neutral-950">
+              <span>Munnar Tours</span>
+
+              <!-- Default arrow -->
+              <img
+                src="../assets/icon/arrow_drop_down_hide.png"
+                alt="Arrow Down"
+                class="h-2.5 w-2.5 object-contain block group-hover:hidden"
+              />
+
+              <!-- Hover arrow -->
+              <img
+                src="../assets/icon/arrow_drop_down_open.png"
+                alt="Arrow Open"
+                class="h-2.5 w-2.5 object-contain hidden group-hover:block"
+              />
+            </div>
+
+            <!-- Hover underline -->
+            <span
+              class="absolute -bottom-2 left-0 h-0.5 w-full bg-brand opacity-0 transition-opacity duration-150 group-hover:opacity-100"
+            ></span>
+          </button>
+
+          <!-- ========== MUNNAR INSIDER BLOG (hover underline added) ========== -->
+          <a
+            href="#"
+            class="relative inline-flex flex-col items-center group hover:text-neutral-950"
+          >
+            <span>Munnar Insider Blog</span>
+
+            <span
+              class="absolute -bottom-2 left-0 h-0.5 w-full bg-brand opacity-0 transition-opacity duration-150 group-hover:opacity-100"
+            ></span>
+          </a>
+
+          <!-- ========== CONTACT US (hover underline added) ========== -->
+          <a
+            href="#"
+            class="relative inline-flex flex-col items-center group hover:text-neutral-950"
+          >
+            <span>Contact Us</span>
+
+            <span
+              class="absolute -bottom-2 left-0 h-0.5 w-full bg-brand opacity-0 transition-opacity duration-150 group-hover:opacity-100"
+            ></span>
+          </a>
+        </nav>
+
+        <!-- ========== RIGHT CTA BUTTONS ========== -->
+        <div class="flex items-center gap-3">
+          <!-- ================= PHONE CTA ================= -->
+          <a
+            href="tel:+919995004278"
+            class="inline-flex items-center gap-2 rounded-full bg-brand px-4 py-2 text-[13px] font-medium text-white shadow-sm transition-colors hover:bg-brand-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/70 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+          >
+            <!-- Phone icon (no circle, direct icon like Figma) -->
+            <img
+              src="../assets/icon/call.png"
+              alt="Call Icon"
+              class="h-3.5 w-3.5 object-contain"
+            />
+
+            <!-- Phone number text -->
+            <span class="whitespace-nowrap font-medium">+91 999 500 4278</span>
+          </a>
+
+          <!-- ========== “Get a FREE Holiday Plan” CTA ========== -->
+          <a
+            href="#holiday-plan"
+            class="inline-flex items-center gap-2 rounded-full bg-brand px-4 py-2 text-[13px] font-semibold text-white shadow-sm transition-colors hover:bg-brand-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/70 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+          >
+            <!-- Gift icon (no circle, direct icon like Figma) -->
+            <img
+              src="../assets/icon/featured_seasonal_and_gifts.png"
+              alt="Gift Icon"
+              class="h-3.5 w-3.5 object-contain"
+            />
+
+            <!-- CTA label -->
+            <span class="whitespace-nowrap font-medium"
+              >Get a FREE Holiday Plan</span
+            >
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Just to see the navbar in isolation while you work -->
+    <main class="h-[1000px] bg-indigo-200"></main>
+  </body>
+</html>
+
+<section class="w-full md:px-10 py-10 border-t border-gray-200 bg-white">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+    <!-- LEFT CONTENT -->
+    <div>
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">
+        Munnar Tour Packages
+      </h2>
+      <p class="text-gray-600 leading-relaxed">
+        Discover Munnar's beauty! This guide highlights top activities,
+        eateries, cozy stays, and attractions in this hill station.
+      </p>
+    </div>
+
+    <!-- RIGHT SIDE: TWO COLUMN LISTS -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
+      <!-- LEFT LIST -->
+      <div class="space-y-5">
+        <a href="#" class="flex items-start gap-2 group w-fit">
+          <img
+            src="/assets/icon/dropdown-menu-icon.png"
+            class="w-4 h-4 mt-[3px]"
+          />
+          <span
+            class="text-[15px] font-medium text-neutral-800 border-b border-brand/70 pb-[2px] group-hover:text-brand-dark transition"
+          >
+            Kerala tour packages
+          </span>
+        </a>
+
+        <a href="#" class="flex items-start gap-2 group w-fit">
+          <img
+            src="/assets/icon/dropdown-menu-icon.png"
+            class="w-4 h-4 mt-[3px]"
+          />
+          <span
+            class="text-[15px] font-medium text-neutral-800 border-b border-brand/70 pb-[2px] group-hover:text-brand-dark transition"
+          >
+            Munnar couple packages
+          </span>
+        </a>
+
+        <a href="#" class="flex items-start gap-2 group w-fit">
+          <img
+            src="/assets/icon/dropdown-menu-icon.png"
+            class="w-4 h-4 mt-[3px]"
+          />
+          <span
+            class="text-[15px] font-medium text-neutral-800 border-b border-brand/70 pb-[2px] group-hover:text-brand-dark transition"
+          >
+            Munnar adventure packages
+          </span>
+        </a>
+      </div>
+
+      <!-- RIGHT LIST -->
+      <div class="space-y-5">
+        <a href="#" class="flex items-start gap-2 group w-fit">
+          <img
+            src="/assets/icon/dropdown-menu-icon.png"
+            class="w-4 h-4 mt-[3px]"
+          />
+          <span
+            class="text-[15px] font-medium text-neutral-800 border-b border-brand/70 pb-[2px] group-hover:text-brand-dark transition"
+          >
+            Kerala tour packages
+          </span>
+        </a>
+
+        <a href="#" class="flex items-start gap-2 group w-fit">
+          <img
+            src="/assets/icon/dropdown-menu-icon.png"
+            class="w-4 h-4 mt-[3px]"
+          />
+          <span
+            class="text-[15px] font-medium text-neutral-800 border-b border-brand/70 pb-[2px] group-hover:text-brand-dark transition"
+          >
+            Munnar couple packages
+          </span>
+        </a>
+
+        <a href="#" class="flex items-start gap-2 group w-fit">
+          <img
+            src="/assets/icon/dropdown-menu-icon.png"
+            class="w-4 h-4 mt-[3px]"
+          />
+          <span
+            class="text-[15px] font-medium text-neutral-800 border-b border-brand/70 pb-[2px] group-hover:text-brand-dark transition"
+          >
+            Munnar adventure packages
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

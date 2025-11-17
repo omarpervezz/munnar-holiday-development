@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clean Mega Menu</title>
+
+    <style>
+      :root {
+        --color-primary: rgba(5, 249, 255, 1);
+        --transition: 0.4s;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* HEADER BAR */
+      .header {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 0 20px 0 40px;
+        min-height: 82px;
+        background-color: rgb(68, 81, 139);
+        z-index: 100;
+      }
+
+      .header__wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+      }
+
+      .header__navigation-wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+      }
+
+      .header__list {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .header__list-item {
+        position: relative;
+        padding: 30px 0;
+      }
+
+      .header__list-item > a {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 16px;
+        color: white;
+        transition: var(--transition);
+      }
+
+      /* HOVER COLOR */
+      .header__list-item:hover > a {
+        color: var(--color-primary);
+      }
+      .header__list-item:hover a svg path {
+        fill: var(--color-primary);
+      }
+
+      /* FULL WIDTH FIXED SUBMENU */
+      .submenu-wrapper {
+        position: fixed;
+        top: 82px; /* match header height */
+        left: 0;
+        width: 100vw;
+        padding: 40px 0;
+        background: rgba(25, 27, 36, 1);
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: var(--transition);
+
+        display: flex;
+        justify-content: center;
+        z-index: 50;
+      }
+
+      .submenu-list__wrapper {
+        color: wheat;
+      }
+
+      /* SHOW SUBMENU ON HOVER */
+      .header__list-item.has-submenu:hover .submenu-wrapper {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper base-template__wrapper">
+      <header class="header">
+        <div class="header__wrapper">
+          <div class="header__navigation-wrapper">
+            <nav class="header__navigation">
+              <ul class="header__list">
+                <li class="header__list-item has-submenu">
+                  <a href="#">
+                    <span>Sports</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="9"
+                      height="5"
+                      fill="none"
+                    >
+                      <path
+                        fill="white"
+                        d="M0.6 0.2C0.9 -0.08 1.4 -0.06 1.67 0.24L4.37 3.14L7.07 0.24C7.35 -0.06 7.83 -0.08 8.13 0.2C8.43 0.48 8.45 0.95 8.17 1.26L4.92 4.76C4.78 4.91 4.58 5 4.37 5C4.16 5 3.96 4.91 3.82 4.76L0.57 1.26C0.29 0.95 0.31 0.48 0.61 0.2Z"
+                      />
+                    </svg>
+                  </a>
+
+                  <!-- FULL WIDTH MEGA MENU -->
+                  <div class="submenu-wrapper">
+                    <div class="submenu-list__wrapper">
+                      <h2>hello</h2>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+    </div>
+  </body>
+</html>
