@@ -138,3 +138,15 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.fade {
+  animation: fadeEffect 0.6s ease-in-out;
+}
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
