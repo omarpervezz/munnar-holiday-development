@@ -7,9 +7,13 @@ body {
 }
 
 @theme {
+  /* existing */
   --color-brand: #00a542;
   --color-brand-dark: #2e965a;
   --color-light: #0917331a;
+  --color-mint: #f0ffef;
+  --container-max: 1480px;
+  --container-padding: 2rem;
 }
 
 /* Global base tweaks just for nicer rendering. Keep this light. */
@@ -21,5 +25,108 @@ body {
 
   a {
     @apply cursor-pointer;
+  }
+}
+
+@layer utilities {
+  .container {
+    width: 100%;
+    max-width: var(--container-max);
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid red;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 rounded-full bg-brand px-6 py-3
+           text-sm font-semibold text-white shadow-sm transition-colors
+           hover:bg-brand-dark focus-visible:outline-none
+           focus-visible:ring-2 focus-visible:ring-brand/70
+           focus-visible:ring-offset-2 cursor-pointer;
+  }
+
+  .btn-white {
+    @apply inline-flex items-center gap-2 rounded-full bg-white px-6 py-3
+           text-sm font-medium text-neutral-900 shadow-md hover:bg-neutral-100 cursor-pointer;
+  }
+
+  .btn-circle {
+    @apply flex items-center justify-center w-10 h-10 rounded-full
+           bg-brand text-white shadow-md hover:bg-brand-dark cursor-pointer;
+  }
+  .section-title {
+    @apply text-2xl sm:text-3xl lg:text-[32px] font-semibold leading-snug text-neutral-900;
+  }
+  .chip {
+    @apply flex items-center;
+  }
+
+  .chip-icon {
+    @apply w-8 h-8 rounded-full border border-light bg-white flex items-center justify-center;
+  }
+
+  .chip-text {
+    @apply h-8 px-4 rounded-full border border-light bg-white flex items-center text-sm text-gray-800;
+  }
+
+  .input-rounded {
+    @apply bg-white border border-light rounded-full flex items-center px-4 h-12;
+  }
+
+  .input-field {
+    @apply flex-1 bg-transparent outline-none text-gray-700 placeholder:text-gray-400;
+  }
+}
+
+@layer components {
+  /* Card wrapper */
+  .package-card {
+    @apply relative bg-white rounded-xl shadow-md overflow-hidden flex flex-col;
+  }
+
+  .package-title {
+    @apply font-semibold text-neutral-900 leading-snug text-[19px] md:text-[21px];
+  }
+
+  .package-tag {
+    @apply absolute top-4 left-0 px-3 py-1 text-sm font-semibold text-white
+           rounded-r-full rounded-l-md;
+  }
+
+  .tag-popular {
+    background-color: #ff6f61;
+  }
+
+  .tag-budget {
+    background-color: #2eb67d;
+  }
+
+  .tag-romantic {
+    background-color: #b14dc6;
+  }
+
+  /* Content wrapper */
+  .package-content {
+    @apply p-4 space-y-3;
+  }
+
+  /* Rating row */
+  .rating-row {
+    @apply flex items-center gap-1 text-[13px] text-gray-600;
+  }
+
+  /* Bottom detail row (days + price) */
+  .package-info {
+    @apply flex items-center justify-between text-sm font-medium text-neutral-800;
+  }
+
+  /* Book now button */
+  .btn-book {
+    @apply w-full flex items-center justify-between bg-brand text-white rounded-full px-5 py-2.5 mt-2
+           font-medium text-base hover:bg-brand-dark transition cursor-pointer;
   }
 }
