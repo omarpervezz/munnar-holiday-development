@@ -13,7 +13,7 @@ body {
   --color-light: #0917331a;
   --color-mint: #f0ffef;
   --container-max: 1480px;
-  --container-padding: 2rem;
+  --container-padding: 1rem;
 }
 
 /* Global base tweaks just for nicer rendering. Keep this light. */
