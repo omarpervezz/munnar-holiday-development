@@ -218,7 +218,7 @@
                     <div class="space-y-5">
                       <a href="#" class="flex items-start gap-2 group w-fit">
                         <img
-                          src="../assets/icon/dropdown-menu-icon.png"
+                          src="../assets/icon/green-up-right-arrow.png"
                           class="w-4 h-4 mt-[3px]"
                         />
                         <span
@@ -229,7 +229,7 @@
 
                       <a href="#" class="flex items-start gap-2 group w-fit">
                         <img
-                          src="../assets/icon/dropdown-menu-icon.png"
+                          src="../assets/icon/green-up-right-arrow.png"
                           class="w-4 h-4 mt-[3px]"
                         />
                         <span
@@ -240,7 +240,7 @@
 
                       <a href="#" class="flex items-start gap-2 group w-fit">
                         <img
-                          src="../assets/icon/dropdown-menu-icon.png"
+                          src="../assets/icon/green-up-right-arrow.png"
                           class="w-4 h-4 mt-[3px]"
                         />
                         <span
@@ -254,7 +254,7 @@
                     <div class="space-y-5">
                       <a href="#" class="flex items-start gap-2 group w-fit">
                         <img
-                          src="../assets/icon/dropdown-menu-icon.png"
+                          src="../assets/icon/green-up-right-arrow.png"
                           class="w-4 h-4 mt-[3px]"
                         />
                         <span
@@ -265,7 +265,7 @@
 
                       <a href="#" class="flex items-start gap-2 group w-fit">
                         <img
-                          src="../assets/icon/dropdown-menu-icon.png"
+                          src="../assets/icon/green-up-right-arrow.png"
                           class="w-4 h-4 mt-[3px]"
                         />
                         <span
@@ -276,7 +276,7 @@
 
                       <a href="#" class="flex items-start gap-2 group w-fit">
                         <img
-                          src="../assets/icon/dropdown-menu-icon.png"
+                          src="../assets/icon/green-up-right-arrow.png"
                           class="w-4 h-4 mt-[3px]"
                         />
                         <span
@@ -343,6 +343,10 @@
     </header>
     <!-- ============================
          Header / Navbar End
+         ============================ -->
+
+    <!-- ============================
+         Gallery Start
          ============================ -->
 
     <section class="w-full py-4">
@@ -542,6 +546,1788 @@
         </div>
       </div>
     </section>
+    <!-- ============================
+         Gallery Start
+         ============================ -->
+
+    <!-- ============================
+     Package Details Section Start
+     ============================ -->
+    <section class="w-full py-4">
+      <div class="container">
+        <div class="w-full flex flex-col lg:flex-row gap-4">
+          <!-- ======================================
+     LEFT SIDE CONTENT (TABS + CONTENT)
+======================================= -->
+          <div class="w-full lg:w-2/3">
+            <!-- =========================
+       STICKY TAB LIST
+  ========================== -->
+            <div
+              id="tabs-wrapper"
+              class="sticky top-0 z-20 bg-white flex items-center gap-8 mb-5 py-2"
+            >
+              <button
+                id="tab-itinerary"
+                class="tab-btn text-brand cursor-pointer"
+                onclick="scrollToSection('section-itinerary')"
+              >
+                Itinerary
+                <span
+                  class="tab-underline absolute bottom-0 left-0 w-full h-[3px] bg-brand"
+                ></span>
+              </button>
+
+              <button
+                id="tab-included"
+                class="tab-btn text-neutral-700 cursor-pointer"
+                onclick="scrollToSection('section-included')"
+              >
+                What’s Included
+                <span
+                  class="tab-underline absolute bottom-0 left-0 w-full h-[3px] bg-brand hidden"
+                ></span>
+              </button>
+
+              <button
+                id="tab-notincluded"
+                class="tab-btn text-neutral-700 cursor-pointer"
+                onclick="scrollToSection('section-notincluded')"
+              >
+                What’s Not Included
+                <span
+                  class="tab-underline absolute bottom-0 left-0 w-full h-[3px] bg-brand hidden"
+                ></span>
+              </button>
+            </div>
+
+            <!-- =========================
+       SECTION: ITINERARY
+  ========================== -->
+            <section id="section-itinerary" class="scroll-section pb-5">
+              <!-- DAY 1 -->
+              <div class="accordion-item mb-5">
+                <button
+                  class="accordion-header"
+                  onclick="toggleAccordion(this)"
+                >
+                  <div class="flex items-center gap-3">
+                    <img
+                      src="../assets/icon/keyboard_arrow_down.png"
+                      class="accordion-arrow w-4 h-4 rotate-0 transition-transform"
+                    />
+                    <p
+                      class="font-semibold text-neutral-900 text-[15px] sm:text-[16px]"
+                    >
+                      Day 1 : Arrival from Kochi & Tea Garden Welcome
+                    </p>
+                  </div>
+                </button>
+
+                <div class="accordion-content active">
+                  <p class="text-[15px] leading-relaxed mt-3 text-neutral-700">
+                    Your journey will likely begin at Kochi’s Cochin
+                    International Airport...
+                  </p>
+
+                  <p class="mt-4 font-semibold text-neutral-900">Highlights</p>
+
+                  <ul class="mt-2 space-y-2 text-[15px] text-neutral-700">
+                    <li class="flex items-center gap-2">
+                      <img src="../assets/icon/verified.png" class="w-4 h-4" />
+                      Pickup from Kochi Airport
+                    </li>
+
+                    <li class="flex items-center gap-2">
+                      <img src="../assets/icon/verified.png" class="w-4 h-4" />
+                      Trip to munnar
+                    </li>
+
+                    <li class="flex items-center gap-2">
+                      <img src="../assets/icon/verified.png" class="w-4 h-4" />
+                      Neriamangalam bridge
+                    </li>
+
+                    <li class="flex items-center gap-2">
+                      <img src="../assets/icon/verified.png" class="w-4 h-4" />
+                      Valara waterfalls
+                    </li>
+
+                    <li class="flex items-center gap-2">
+                      <img src="../assets/icon/verified.png" class="w-4 h-4" />
+                      Cheeyappara waterfalls
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- DAY 2 -->
+              <div class="accordion-item mb-5">
+                <button
+                  class="accordion-header"
+                  onclick="toggleAccordion(this)"
+                >
+                  <div class="flex items-center gap-3">
+                    <img
+                      src="../assets/icon/keyboard_arrow_down.png"
+                      class="accordion-arrow w-4 h-4 rotate-0 transition-transform"
+                    />
+                    <p
+                      class="font-semibold text-neutral-900 text-[15px] sm:text-[16px]"
+                    >
+                      Day 2 : National Park Trails & Waterfall Picnic
+                    </p>
+                  </div>
+                </button>
+
+                <div class="accordion-content active">
+                  <p class="text-[15px] leading-relaxed mt-3 text-neutral-700">
+                    Your journey will likely begin at Kochi’s Cochin
+                    International Airport...
+                  </p>
+
+                  <p class="mt-4 font-semibold text-neutral-900">Highlights</p>
+
+                  <ul class="mt-2 space-y-2 text-[15px] text-neutral-700">
+                    <li class="flex items-center gap-2">
+                      <img src="../assets/icon/verified.png" class="w-4 h-4" />
+                      Pickup from Kochi Airport
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <img src="../assets/icon/verified.png" class="w-4 h-4" />
+                      Trip to munnar
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <img src="../assets/icon/verified.png" class="w-4 h-4" />
+                      Neriamangalam bridge
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <img src="../assets/icon/verified.png" class="w-4 h-4" />
+                      Valara waterfalls
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <img src="../assets/icon/verified.png" class="w-4 h-4" />
+                      Cheeyappara waterfalls
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- DAY 3 -->
+              <div class="accordion-item mb-5">
+                <button
+                  class="accordion-header"
+                  onclick="toggleAccordion(this)"
+                >
+                  <div class="flex items-center gap-3">
+                    <img
+                      src="../assets/icon/keyboard_arrow_down.png"
+                      class="accordion-arrow w-4 h-4 rotate-0 transition-transform"
+                    />
+                    <p
+                      class="font-semibold text-neutral-900 text-[15px] sm:text-[16px]"
+                    >
+                      Day 3 : Peaks, Parks & Departure
+                    </p>
+                  </div>
+                </button>
+
+                <div class="accordion-content active">
+                  <p class="text-[15px] leading-relaxed mt-3 text-neutral-700">
+                    Your journey will likely begin at Kochi’s Cochin
+                    International Airport...
+                  </p>
+
+                  <p class="mt-4 font-semibold text-neutral-900">Highlights</p>
+
+                  <ul class="mt-2 space-y-2 text-[15px] text-neutral-700">
+                    <li class="flex items-center gap-2">
+                      <img src="../assets/icon/verified.png" class="w-4 h-4" />
+                      Pickup from Kochi Airport
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <img src="../assets/icon/verified.png" class="w-4 h-4" />
+                      Trip to munnar
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <img src="../assets/icon/verified.png" class="w-4 h-4" />
+                      Neriamangalam bridge
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <img src="../assets/icon/verified.png" class="w-4 h-4" />
+                      Valara waterfalls
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <img src="../assets/icon/verified.png" class="w-4 h-4" />
+                      Cheeyappara waterfalls
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <!-- =========================
+       SECTION: WHAT'S INCLUDED
+  ========================== -->
+            <section id="section-included" class="scroll-section pb-5 pt-5">
+              <h2 class="text-xl font-semibold text-neutral-900 mb-4">
+                What’s Included
+              </h2>
+
+              <div class="space-y-4">
+                <div class="info-card flex items-center gap-3 py-4 px-5">
+                  <img src="../assets/icon/verified.png" class="w-5 h-5" />
+                  <p class="text-[15px] text-neutral-800 font-semibold">
+                    Accommodation in 3 Star resort
+                  </p>
+                </div>
+
+                <div class="info-card flex items-center gap-3 py-4 px-5">
+                  <img src="../assets/icon/verified.png" class="w-5 h-5" />
+                  <p class="text-[15px] text-neutral-800 font-semibold">
+                    Private Vehicle with Chauffeur for 3 Days for Sightseeing
+                  </p>
+                </div>
+
+                <div class="info-card flex items-center gap-3 py-4 px-5">
+                  <img src="../assets/icon/verified.png" class="w-5 h-5" />
+                  <p class="text-[15px] text-neutral-800 font-semibold">
+                    Airport/Hotel Transfers
+                  </p>
+                </div>
+
+                <div class="info-card flex items-center gap-3 py-4 px-5">
+                  <img src="../assets/icon/verified.png" class="w-5 h-5" />
+                  <p class="text-[15px] text-neutral-800 font-semibold">
+                    All applicable taxes including GST of 5%
+                  </p>
+                </div>
+
+                <div class="info-card flex items-center gap-3 py-4 px-5">
+                  <img src="../assets/icon/verified.png" class="w-5 h-5" />
+                  <p class="text-[15px] text-neutral-800 font-semibold">
+                    Breakfast in All Resorts
+                  </p>
+                </div>
+
+                <div class="info-card flex items-center gap-3 py-4 px-5">
+                  <img src="../assets/icon/verified.png" class="w-5 h-5" />
+                  <p class="text-[15px] text-neutral-800 font-semibold">
+                    All Meals Included for Houseboat
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <!-- =========================
+       SECTION: WHAT'S NOT INCLUDED
+  ========================== -->
+            <section id="section-notincluded" class="scroll-section pb-5 pt-5">
+              <h2 class="text-xl font-semibold text-neutral-900 mb-4">
+                What’s Not Included
+              </h2>
+
+              <div class="space-y-4">
+                <div class="info-card flex items-center gap-3 py-4 px-5">
+                  <img src="../assets/icon/verified.png" class="w-5 h-5" />
+                  <p class="text-[15px] text-neutral-800 font-semibold">
+                    Accommodation in 3 Star resort
+                  </p>
+                </div>
+
+                <div class="info-card flex items-center gap-3 py-4 px-5">
+                  <img src="../assets/icon/verified.png" class="w-5 h-5" />
+                  <p class="text-[15px] text-neutral-800 font-semibold">
+                    Private Vehicle with Chauffeur for 3 Days for Sightseeing
+                  </p>
+                </div>
+
+                <div class="info-card flex items-center gap-3 py-4 px-5">
+                  <img src="../assets/icon/verified.png" class="w-5 h-5" />
+                  <p class="text-[15px] text-neutral-800 font-semibold">
+                    Airport/Hotel Transfers
+                  </p>
+                </div>
+
+                <div class="info-card flex items-center gap-3 py-4 px-5">
+                  <img src="../assets/icon/verified.png" class="w-5 h-5" />
+                  <p class="text-[15px] text-neutral-800 font-semibold">
+                    All applicable taxes including GST of 5%
+                  </p>
+                </div>
+
+                <div class="info-card flex items-center gap-3 py-4 px-5">
+                  <img src="../assets/icon/verified.png" class="w-5 h-5" />
+                  <p class="text-[15px] text-neutral-800 font-semibold">
+                    Breakfast in All Resorts
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!-- ======================================
+           RIGHT SIDEBAR CONTENT
+      ======================================= -->
+          <div class="w-full lg:w-1/3">
+            <!-- WHY CHOOSE US -->
+            <h3 class="text-lg font-semibold text-neutral-900 mb-2 pt-2">
+              Why choose us ?
+            </h3>
+            <div class="space-y-6">
+              <div class="bg-white border border-light rounded-xl p-8 lg:mt-6">
+                <div class="space-y-4">
+                  <div class="flex items-start gap-3">
+                    <img src="../assets/icon/percent_discount.png" />
+                    <p class="text-base text-neutral-900 font-semibold">
+                      25% Cost Savings than booking direct with hotels
+                    </p>
+                  </div>
+
+                  <div class="flex items-start gap-3">
+                    <img src="../assets/icon/percent_discount.png" />
+                    <p class="text-base text-neutral-900 font-semibold">
+                      Govt of Kerala Approved Tour Operator
+                    </p>
+                  </div>
+
+                  <div class="flex items-start gap-3">
+                    <img src="../assets/icon/percent_discount.png" />
+                    <p class="text-base text-neutral-900 font-semibold">
+                      Customized Holiday Plans as per your budget
+                    </p>
+                  </div>
+
+                  <div class="flex items-start gap-3">
+                    <img src="../assets/icon/percent_discount.png" />
+                    <p class="text-base text-neutral-900 font-semibold">
+                      Trusted by 50000+ Guests
+                    </p>
+                  </div>
+
+                  <div class="flex items-start gap-3">
+                    <img src="../assets/icon/percent_discount.png" />
+                    <p class="text-base text-neutral-900 font-semibold">
+                      Guaranteed Response within 24 hours
+                    </p>
+                  </div>
+
+                  <div class="flex items-start gap-3">
+                    <img src="../assets/icon/percent_discount.png" />
+                    <p class="text-base text-neutral-900 font-semibold">
+                      Dedicated Trip Designer to assist you
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CTA CARD -->
+              <div class="relative rounded-xl overflow-hidden">
+                <img
+                  src="../assets/images/why-choose-us-image.jpg"
+                  class="w-full h-64 object-cover"
+                  alt="cta"
+                />
+
+                <div
+                  class="absolute inset-0 bg-black/40 px-6 flex flex-col justify-center items-center text-center"
+                >
+                  <h3 class="text-white text-2xl font-semibold">
+                    Are You Still Confused?
+                  </h3>
+
+                  <p class="text-white mt-1 text-sm max-w-[260px]">
+                    Get a Customized Munnar Holiday in hotels of your choice.
+                  </p>
+
+                  <div class="flex items-center gap-3 mt-3">
+                    <button class="btn-white">Get a FREE Holiday Plan</button>
+
+                    <div class="btn-circle w-10 h-10">
+                      <img
+                        src="../assets/icon/arrow-up-right.png"
+                        alt="icon"
+                        class="w-4 h-4"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- MAP CARD -->
+              <div class="rounded-xl overflow-hidden border border-light">
+                <img
+                  src="../assets/images/map-image.png"
+                  class="w-full h-52 object-cover"
+                />
+              </div>
+
+              <!-- Best Resort Card -->
+              <div class="rounded-xl bg-white border border-light p-4">
+                <!-- Resort Image -->
+                <div class="relative w-full">
+                  <img
+                    src="../assets/images/best-resourt-munnar.jpg"
+                    class="w-full h-64 object-cover rounded-xl"
+                    alt="Resort Image"
+                  />
+
+                  <!-- Price Tag -->
+                  <span
+                    class="absolute top-3 right-3 bg-white text-neutral-800 text-[13px] font-semibold px-3 py-1 rounded-full shadow"
+                  >
+                    From ₹320/night
+                  </span>
+                </div>
+
+                <!-- Resort Info + Arrow -->
+                <div class="mt-4 flex items-center justify-between">
+                  <!-- Text -->
+                  <div>
+                    <p class="text-[17px] font-semibold text-neutral-900">
+                      The Leaf Resort Munnar
+                    </p>
+                    <p class="text-[14px] text-neutral-600">4 star resorts</p>
+                  </div>
+
+                  <!-- Arrow Button -->
+                  <a
+                    href="#"
+                    class="w-10 h-10 flex items-center justify-center rounded-full border border-light bg-white cursor-pointer"
+                  >
+                    <img
+                      src="../assets/icon/dark-up-right-arrow.png"
+                      class="w-4 h-4"
+                      alt="Open"
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <!-- CHOOSE PACKAGE LIST -->
+              <div class="bg-white border border-light rounded-xl p-6">
+                <h3 class="text-lg font-semibold text-neutral-900 mb-5">
+                  Choose your Munnar tour package
+                </h3>
+
+                <div class="space-y-4">
+                  <a href="#" class="flex items-center gap-3 group">
+                    <img
+                      src="../assets/icon/dropdown-menu-icon.png"
+                      class="w-5 h-5"
+                    />
+                    <p
+                      class="text-[15px] font-medium text-neutral-800 group-hover:text-brand transition"
+                    >
+                      2 Days Kerala tour packages
+                    </p>
+                  </a>
+
+                  <a href="#" class="flex items-center gap-3 group">
+                    <img
+                      src="../assets/icon/dropdown-menu-icon.png"
+                      class="w-5 h-5"
+                    />
+                    <p
+                      class="text-[15px] font-medium text-neutral-800 group-hover:text-brand transition"
+                    >
+                      3 Days Kerala tour packages
+                    </p>
+                  </a>
+
+                  <a href="#" class="flex items-center gap-3 group">
+                    <img
+                      src="../assets/icon/dropdown-menu-icon.png"
+                      class="w-5 h-5"
+                    />
+                    <p
+                      class="text-[15px] font-medium text-neutral-800 group-hover:text-brand transition"
+                    >
+                      4 Days Kerala tour packages
+                    </p>
+                  </a>
+
+                  <a href="#" class="flex items-center gap-3 group">
+                    <img
+                      src="../assets/icon/dropdown-menu-icon.png"
+                      class="w-5 h-5"
+                    />
+                    <p
+                      class="text-[15px] font-medium text-neutral-800 group-hover:text-brand transition"
+                    >
+                      5 Days Kerala tour packages
+                    </p>
+                  </a>
+
+                  <a href="#" class="flex items-center gap-3 group">
+                    <img
+                      src="../assets/icon/dropdown-menu-icon.png"
+                      class="w-5 h-5"
+                    />
+                    <p
+                      class="text-[15px] font-medium text-neutral-800 group-hover:text-brand transition"
+                    >
+                      6 Days Kerala tour packages
+                    </p>
+                  </a>
+
+                  <a href="#" class="flex items-center gap-3 group">
+                    <img
+                      src="../assets/icon/dropdown-menu-icon.png"
+                      class="w-5 h-5"
+                    />
+                    <p
+                      class="text-[15px] font-medium text-neutral-800 group-hover:text-brand transition"
+                    >
+                      7 Days Kerala tour packages
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============================
+     Package Details Section End
+     ============================ -->
+
+    <!-- ============================
+     Similar Packages Section Start
+============================= -->
+    <section class="w-full py-12 bg-mint">
+      <div class="container">
+        <!-- Chip -->
+        <div class="chip justify-center mb-3">
+          <div class="chip-icon bg-transparent">
+            <img src="../assets/icon/Vector.png" />
+          </div>
+          <span class="chip-text bg-transparent">Similar Packages</span>
+        </div>
+
+        <!-- Title -->
+        <h2 class="section-title text-center mb-10">
+          Chill out and have fun: Awesome holiday deals just for you!
+        </h2>
+
+        <!-- GRID -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <div class="package-card">
+            <span class="package-tag tag-popular">Popular</span>
+
+            <img
+              src="../assets/images/package-image-1.jpg"
+              class="w-full h-48 object-cover"
+            />
+
+            <div class="package-content">
+              <p class="package-title">Munnar Adventure Trip</p>
+
+              <div class="rating-row">
+                <img src="../assets/icon/star.png" class="w-4 h-4" />
+                <img src="../assets/icon/star.png" class="w-4 h-4" />
+                <img src="../assets/icon/star.png" class="w-4 h-4" />
+                <img src="../assets/icon/star.png" class="w-4 h-4" />
+                <img src="../assets/icon/star.png" class="w-4 h-4" />
+                <span class="text-base font-medium">(20+ Reviews)</span>
+              </div>
+
+              <div class="package-info">
+                <span class="package-title">5 Days</span>
+                <span class="package-titles">₹6099 / $88</span>
+              </div>
+
+              <button class="btn-book">
+                Book now
+                <div class="btn-circle bg-white w-9 h-9">
+                  <img
+                    src="../assets/icon/green-up-right-arrow.png"
+                    class="w-4 h-4"
+                  />
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="package-card">
+            <span class="package-tag tag-budget">Budget Friendly</span>
+
+            <img
+              src="../assets/images/package-image-2.jpg"
+              class="w-full h-48 object-cover"
+            />
+
+            <div class="package-content">
+              <p class="package-title">Call Of The Hills - Hill Station</p>
+
+              <div class="rating-row">
+                <img src="../assets/icon/star.png" class="w-4 h-4" />
+                <img src="../assets/icon/star.png" class="w-4 h-4" />
+                <img src="../assets/icon/star.png" class="w-4 h-4" />
+                <img src="../assets/icon/star.png" class="w-4 h-4" />
+                <img src="../assets/icon/star.png" class="w-4 h-4" />
+                <span class="text-base font-medium">(20+ Reviews)</span>
+              </div>
+
+              <div class="package-info">
+                <span class="package-title">5 Days</span>
+                <span class="package-titles">₹6099 / $88</span>
+              </div>
+
+              <button class="btn-book">
+                Book now
+                <div class="btn-circle bg-white w-9 h-9">
+                  <img
+                    src="../assets/icon/green-up-right-arrow.png"
+                    class="w-4 h-4"
+                  />
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="package-card">
+            <span class="package-tag tag-romantic">Romantic</span>
+
+            <img
+              src="../assets/images/package-image-3.jpg"
+              class="w-full h-48 object-cover"
+            />
+
+            <div class="package-content">
+              <p class="package-title">Colors Of Kerala Honeymoon</p>
+
+              <div class="rating-row">
+                <img src="../assets/icon/star.png" class="w-4 h-4" />
+                <img src="../assets/icon/star.png" class="w-4 h-4" />
+                <img src="../assets/icon/star.png" class="w-4 h-4" />
+                <img src="../assets/icon/star.png" class="w-4 h-4" />
+                <img src="../assets/icon/star.png" class="w-4 h-4" />
+                <span class="text-base font-medium">(20+ Reviews)</span>
+              </div>
+
+              <div class="package-info">
+                <span class="package-title">5 Days</span>
+                <span class="package-titles">₹6099 / $88</span>
+              </div>
+
+              <button class="btn-book">
+                Book now
+                <div class="btn-circle bg-white w-9 h-9">
+                  <img
+                    src="../assets/icon/green-up-right-arrow.png"
+                    class="w-4 h-4"
+                  />
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="package-card">
+            <span class="package-tag tag-popular">Popular</span>
+
+            <img
+              src="../assets/images/package-image-4.jpg"
+              class="w-full h-48 object-cover"
+            />
+
+            <div class="package-content">
+              <p class="package-title">Grand Tour Of Munnar</p>
+
+              <div class="rating-row">
+                <img src="../assets/icon/star.png" class="w-4 h-4" />
+                <img src="../assets/icon/star.png" class="w-4 h-4" />
+                <img src="../assets/icon/star.png" class="w-4 h-4" />
+                <img src="../assets/icon/star.png" class="w-4 h-4" />
+                <img src="../assets/icon/star.png" class="w-4 h-4" />
+                <span class="text-base font-medium">(20+ Reviews)</span>
+              </div>
+
+              <div class="package-info">
+                <span class="package-title">5 Days</span>
+                <span class="package-titles">₹6099 / $88</span>
+              </div>
+
+              <button class="btn-book">
+                Book now
+                <div class="btn-circle bg-white w-9 h-9">
+                  <img
+                    src="../assets/icon/green-up-right-arrow.png"
+                    class="w-4 h-4"
+                  />
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="package-card">
+            <span class="package-tag tag-budget">Budget Friendly</span>
+
+            <img
+              src="../assets/images/package-image-1.jpg"
+              class="w-full h-48 object-cover"
+            />
+
+            <div class="package-content">
+              <p class="package-title">Call Of The Hills - Hill Station</p>
+
+              <div class="rating-row">
+                <img src="../assets/icon/star.png" class="w-4 h-4" />
+                <img src="../assets/icon/star.png" class="w-4 h-4" />
+                <img src="../assets/icon/star.png" class="w-4 h-4" />
+                <img src="../assets/icon/star.png" class="w-4 h-4" />
+                <img src="../assets/icon/star.png" class="w-4 h-4" />
+                <span class="text-base font-medium">(20+ Reviews)</span>
+              </div>
+
+              <div class="package-info">
+                <span class="package-title">5 Days</span>
+                <span class="package-titles">₹6099 / $88</span>
+              </div>
+
+              <button class="btn-book">
+                Book now
+                <div class="btn-circle bg-white w-9 h-9">
+                  <img
+                    src="../assets/icon/green-up-right-arrow.png"
+                    class="w-4 h-4"
+                  />
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="package-card">
+            <span class="package-tag tag-romantic">Romantic</span>
+
+            <img
+              src="../assets/images/package-image-5.jpg"
+              class="w-full h-48 object-cover"
+            />
+
+            <div class="package-content">
+              <p class="package-title">Colors Of Kerala Honeymoon</p>
+
+              <div class="rating-row">
+                <img src="../assets/icon/star.png" class="w-4 h-4" />
+                <img src="../assets/icon/star.png" class="w-4 h-4" />
+                <img src="../assets/icon/star.png" class="w-4 h-4" />
+                <img src="../assets/icon/star.png" class="w-4 h-4" />
+                <img src="../assets/icon/star.png" class="w-4 h-4" />
+                <span class="text-base font-medium">(20+ Reviews)</span>
+              </div>
+
+              <div class="package-info">
+                <span class="package-title">5 Days</span>
+                <span class="package-titles">₹6099 / $88</span>
+              </div>
+
+              <button class="btn-book">
+                Book now
+                <div class="btn-circle bg-white w-9 h-9">
+                  <img
+                    src="../assets/icon/green-up-right-arrow.png"
+                    class="w-4 h-4"
+                  />
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- View All Button -->
+        <div class="flex justify-center mt-10">
+          <button class="btn-primary px-6 py-3 font-medium">View All</button>
+        </div>
+      </div>
+    </section>
+    <!-- ============================
+     Similar Packages Section End
+============================= -->
+
+    <!-- ============================
+Loving Testimonials Section Start
+ ============================ -->
+
+    <section class="w-full py-12">
+      <div class="container">
+        <div class="chip mb-4">
+          <div class="chip-icon">
+            <img src="../assets/icon/Vector.png" alt="Inspiration Icon" />
+          </div>
+          <span class="chip-text">Our Travelers</span>
+        </div>
+
+        <div class="flex items-center justify-between mb-13">
+          <h2 class="section-title m-0">
+            Loving Testimonials from Our Valued Customers
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
+          <!-- Testimonial Card 1 -->
+          <div
+            class="relative rounded-xl overflow-hidden shadow-lg group cursor-pointer"
+          >
+            <div
+              class="absolute inset-0 bg-linear-to-t from-black/70 to-transparent"
+            ></div>
+
+            <img
+              src="../assets/images/testimonial-1.jpg"
+              alt="Wade Warren"
+              class="w-full h-72 object-cover"
+            />
+
+            <div
+              class="absolute top-4 left-4 text-white text-lg font-semibold leading-tight"
+            >
+              Wade Warren
+            </div>
+
+            <div
+              class="absolute top-4 right-4 btn-circle bg-black/10 shadow-none w-9 h-9"
+            >
+              <img
+                src="../assets/icon/fluent_speaker-1-16-regular.png"
+                alt="Play Video"
+              />
+            </div>
+
+            <div class="absolute bottom-2 left-2 text-sm text-white">
+              "Booking my trip through Munnar.Holiday was one of the best
+              decisions I've ever made..."
+            </div>
+
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="btn-circle bg-black/10 shadow-none p-1">
+                <img
+                  src="../assets/icon/iconoir_play-solid.png"
+                  alt="Play Video"
+                  class="w-5 h-5"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial Card 2 -->
+          <div
+            class="relative rounded-xl overflow-hidden shadow-lg group cursor-pointer"
+          >
+            <div
+              class="absolute inset-0 bg-linear-to-t from-black/70 to-transparent"
+            ></div>
+
+            <img
+              src="../assets/images/testimonial-2.jpg"
+              alt="Wade Warren"
+              class="w-full h-72 object-cover"
+            />
+
+            <div
+              class="absolute top-4 left-4 text-white text-lg font-semibold leading-tight"
+            >
+              Wade Warren
+            </div>
+
+            <div
+              class="absolute top-4 right-4 btn-circle bg-black/10 shadow-none w-9 h-9"
+            >
+              <img
+                src="../assets/icon/fluent_speaker-1-16-regular.png"
+                alt="Play Video"
+              />
+            </div>
+
+            <div class="absolute bottom-2 left-2 text-sm text-white">
+              "Booking my trip through Munnar.Holiday was one of the best
+              decisions I've ever made..."
+            </div>
+
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="btn-circle bg-black/10 shadow-none p-1">
+                <img
+                  src="../assets/icon/iconoir_play-solid.png"
+                  alt="Play Video"
+                  class="w-5 h-5"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial Card 3 -->
+          <div
+            class="relative rounded-xl overflow-hidden shadow-lg group cursor-pointer"
+          >
+            <div
+              class="absolute inset-0 bg-linear-to-t from-black/70 to-transparent"
+            ></div>
+
+            <img
+              src="../assets/images/testimonial-3.jpg"
+              alt="Wade Warren"
+              class="w-full h-72 object-cover"
+            />
+
+            <div
+              class="absolute top-4 left-4 text-white text-lg font-semibold leading-tight"
+            >
+              Wade Warren
+            </div>
+
+            <div
+              class="absolute top-4 right-4 btn-circle bg-black/10 shadow-none w-9 h-9"
+            >
+              <img
+                src="../assets/icon/fluent_speaker-1-16-regular.png"
+                alt="Play Video"
+              />
+            </div>
+
+            <div class="absolute bottom-2 left-2 text-sm text-white">
+              "Booking my trip through Munnar.Holiday was one of the best
+              decisions I've ever made..."
+            </div>
+
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="btn-circle bg-black/10 shadow-none p-1">
+                <img
+                  src="../assets/icon/iconoir_play-solid.png"
+                  alt="Play Video"
+                  class="w-5 h-5"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial Card 4 -->
+          <div
+            class="relative rounded-xl overflow-hidden shadow-lg group cursor-pointer"
+          >
+            <div
+              class="absolute inset-0 bg-linear-to-t from-black/70 to-transparent"
+            ></div>
+
+            <img
+              src="../assets/images/testimonial-4.jpg"
+              alt="Wade Warren"
+              class="w-full h-72 object-cover"
+            />
+
+            <div
+              class="absolute top-4 left-4 text-white text-lg font-semibold leading-tight"
+            >
+              Wade Warren
+            </div>
+
+            <div
+              class="absolute top-4 right-4 btn-circle bg-black/10 shadow-none w-9 h-9"
+            >
+              <img
+                src="../assets/icon/fluent_speaker-1-16-regular.png"
+                alt="Play Video"
+              />
+            </div>
+
+            <div class="absolute bottom-2 left-2 text-sm text-white">
+              "Booking my trip through Munnar.Holiday was one of the best
+              decisions I've ever made..."
+            </div>
+
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="btn-circle bg-black/10 shadow-none p-1">
+                <img
+                  src="../assets/icon/iconoir_play-solid.png"
+                  alt="Play Video"
+                  class="w-5 h-5"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial Card 5 -->
+          <div
+            class="relative rounded-xl overflow-hidden shadow-lg group cursor-pointer"
+          >
+            <div
+              class="absolute inset-0 bg-linear-to-t from-black/70 to-transparent"
+            ></div>
+
+            <img
+              src="../assets/images/testimonial-5.jpg"
+              alt="Wade Warren"
+              class="w-full h-72 object-cover"
+            />
+
+            <div
+              class="absolute top-4 left-4 text-white text-lg font-semibold leading-tight"
+            >
+              Wade Warren
+            </div>
+
+            <div
+              class="absolute top-4 right-4 btn-circle bg-black/10 shadow-none w-9 h-9"
+            >
+              <img
+                src="../assets/icon/fluent_speaker-1-16-regular.png"
+                alt="Play Video"
+              />
+            </div>
+
+            <div class="absolute bottom-2 left-2 text-sm text-white">
+              "Booking my trip through Munnar.Holiday was one of the best
+              decisions I've ever made..."
+            </div>
+
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="btn-circle bg-black/10 shadow-none p-1">
+                <img
+                  src="../assets/icon/iconoir_play-solid.png"
+                  alt="Play Video"
+                  class="w-5 h-5"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============================
+Loving Testimonials Section End
+ ============================ -->
+
+    <!-- ============================
+Munnar Insider Blog - Latest Posts Section Start
+============================ -->
+    <section class="w-full py-12 bg-mint">
+      <div class="container">
+        <!-- Chip -->
+        <div class="chip mb-4">
+          <div class="chip-icon bg-transparent">
+            <img src="../assets/icon/Vector.png" />
+          </div>
+          <span class="chip-text bg-transparent">Blog</span>
+        </div>
+
+        <!-- Title + View All -->
+        <div class="flex items-center justify-between mb-10">
+          <h2 class="section-title m-0">Munnar Insider Blog - Latest Posts</h2>
+
+          <a
+            href="#"
+            class="btn-primary px-5 py-2 text-sm whitespace-nowrap font-normal"
+          >
+            View All
+          </a>
+        </div>
+
+        <!-- Blog Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <!-- Blog Card 1 -->
+          <a href="#" class="block group">
+            <div class="w-full h-56 rounded-xl overflow-hidden mb-4">
+              <img
+                src="../assets/images/package-image-2.jpg"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                alt="Adventure Parks in Munnar"
+              />
+            </div>
+
+            <h3 class="text-lg font-semibold text-[#1A1A1A]">
+              Adventure Parks in Munnar
+            </h3>
+
+            <p class="text-[#333333] mt-1 text-base">
+              Planning a trip to Munnar? Discover the best adventure parks in
+              the southern hills.
+            </p>
+          </a>
+
+          <!-- Blog Card 2 -->
+          <a href="#" class="block group">
+            <div class="w-full h-56 rounded-xl overflow-hidden mb-4">
+              <img
+                src="../assets/images/package-image-2.jpg"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                alt="Bison Valley Munnar - Gaurs"
+              />
+            </div>
+
+            <h3 class="text-lg font-semibold text-[#1A1A1A]">
+              Bison Valley Munnar - Gaurs
+            </h3>
+
+            <p class="text-[#333333] mt-1 text-base">
+              Bison Valley Munnar is named after the Indian bison (gaur) that
+              once roamed the area.
+            </p>
+          </a>
+
+          <!-- Blog Card 3 -->
+          <a href="#" class="block group">
+            <div class="w-full h-56 rounded-xl overflow-hidden mb-4">
+              <img
+                src="../assets/images/package-image-2.jpg"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                alt="Viripara Tiger Caves, Munnar"
+              />
+            </div>
+
+            <h3 class="text-lg font-semibold text-[#1A1A1A]">
+              Viripara Tiger Caves, Munnar
+            </h3>
+
+            <p class="text-[#333333] mt-1 text-base">
+              Have you planned your itinerary for Munnar yet? Don’t miss out on
+              Viripara Tiger Caves.
+            </p>
+          </a>
+
+          <!-- Blog Card 4 -->
+          <a href="#" class="block group">
+            <div class="w-full h-56 rounded-xl overflow-hidden mb-4">
+              <img
+                src="../assets/images/package-image-2.jpg"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                alt="Adventure Parks in Munnar"
+              />
+            </div>
+
+            <h3 class="text-lg font-semibold text-[#1A1A1A]">
+              Adventure Parks in Munnar
+            </h3>
+
+            <p class="text-[#333333] mt-1 text-base">
+              Planning a trip to Munnar? Discover the best adventure parks in
+              the southern hills.
+            </p>
+          </a>
+
+          <!-- Blog Card 5 -->
+          <a href="#" class="block group">
+            <div class="w-full h-56 rounded-xl overflow-hidden mb-4">
+              <img
+                src="../assets/images/package-image-2.jpg"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                alt="Bison Valley Munnar - Gaurs"
+              />
+            </div>
+
+            <h3 class="text-lg font-semibold text-[#1A1A1A]">
+              Bison Valley Munnar - Gaurs
+            </h3>
+
+            <p class="text-[#333333] mt-1 text-base">
+              Bison Valley Munnar is named after the Indian bison (gaur) that
+              once roamed the area.
+            </p>
+          </a>
+
+          <!-- Blog Card 6 -->
+          <a href="#" class="block group">
+            <div class="w-full h-56 rounded-xl overflow-hidden mb-4">
+              <img
+                src="../assets/images/package-image-2.jpg"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                alt="Viripara Tiger Caves, Munnar"
+              />
+            </div>
+
+            <h3 class="text-lg font-semibold text-[#1A1A1A]">
+              Viripara Tiger Caves, Munnar
+            </h3>
+
+            <p class="text-[#333333] mt-1 text-base">
+              Have you planned your itinerary for Munnar yet? Don’t miss out on
+              Viripara Tiger Caves.
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ============================
+Munnar Insider Blog - Latest Posts Section End
+============================ -->
+
+    <!-- ============================
+FAQ Section Start
+============================ -->
+    <section class="w-full py-12 bg-[#F7F7F7]">
+      <div class="container">
+        <!-- Chip -->
+        <div class="chip mb-4 mx-auto w-fit">
+          <div class="chip-icon bg-transparent">
+            <img src="../assets/icon/Vector.png" />
+          </div>
+          <span class="chip-text bg-transparent">FAQ</span>
+        </div>
+
+        <!-- Title -->
+        <h2 class="section-title text-center mb-8">
+          Everything you need to know <br class="hidden sm:block" />
+          was clearly answered.
+        </h2>
+
+        <!-- FAQ Wrapper -->
+        <div id="faq-wrapper" class="max-w-3xl mx-auto space-y-4">
+          <!-- FAQ Item -->
+          <div
+            class="faq-item bg-white rounded-xl border border-light overflow-hidden"
+          >
+            <button
+              class="faq-btn w-full flex items-center justify-between px-6 py-3 cursor-pointer text-left"
+            >
+              <span class="text-[#1A1A1A] font-normal text-lg">
+                How do I book a tour?
+              </span>
+
+              <!-- Plus / Minus Icon -->
+              <svg
+                class="faq-icon w-6 h-6 transition-transform duration-300"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+              >
+                <path class="line-1" d="M4 12h16" stroke-linecap="round" />
+                <path class="line-2" d="M12 4v16" stroke-linecap="round" />
+              </svg>
+            </button>
+
+            <!-- Content -->
+            <div
+              class="faq-content max-h-0 overflow-hidden px-6 transition-all duration-300"
+            >
+              <p class="text-gray-700 py-2 text-base">
+                You can book a tour by contacting our travel experts through the
+                website or phone.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item -->
+          <div
+            class="faq-item bg-white rounded-xl border border-light overflow-hidden"
+          >
+            <button
+              class="faq-btn w-full flex items-center justify-between px-6 py-3 cursor-pointer text-left"
+            >
+              <span class="text-[#1A1A1A] font-normal text-lg">
+                Is my payment secure?
+              </span>
+              <svg
+                class="faq-icon w-6 h-6 transition-transform duration-300"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+              >
+                <path class="line-1" d="M4 12h16" stroke-linecap="round" />
+                <path class="line-2" d="M12 4v16" stroke-linecap="round" />
+              </svg>
+            </button>
+            <div
+              class="faq-content max-h-0 overflow-hidden px-6 transition-all duration-300"
+            >
+              <p class="text-gray-700 py-2 text-base">
+                Yes, all payments are handled securely with encrypted gateways.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item -->
+          <div
+            class="faq-item bg-white rounded-xl border border-light overflow-hidden"
+          >
+            <button
+              class="faq-btn w-full flex items-center justify-between px-6 py-3 cursor-pointer text-left"
+            >
+              <span class="text-[#1A1A1A] font-normal text-lg">
+                What’s your cancellation policy?
+              </span>
+              <svg
+                class="faq-icon w-6 h-6 transition-transform duration-300"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+              >
+                <path class="line-1" d="M4 12h16" stroke-linecap="round" />
+                <path class="line-2" d="M12 4v16" stroke-linecap="round" />
+              </svg>
+            </button>
+            <div
+              class="faq-content max-h-0 overflow-hidden px-6 transition-all duration-300"
+            >
+              <p class="text-gray-700 py-2 text-base">
+                You can cancel with a full refund depending on the policy of
+                your selected package.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item -->
+          <div
+            class="faq-item bg-white rounded-xl border border-light overflow-hidden"
+          >
+            <button
+              class="faq-btn w-full flex items-center justify-between px-6 py-3 cursor-pointer text-left"
+            >
+              <span class="text-[#1A1A1A] font-normal text-lg">
+                Do you provide international tours?
+              </span>
+              <svg
+                class="faq-icon w-6 h-6 transition-transform duration-300"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+              >
+                <path class="line-1" d="M4 12h16" stroke-linecap="round" />
+                <path class="line-2" d="M12 4v16" stroke-linecap="round" />
+              </svg>
+            </button>
+            <div
+              class="faq-content max-h-0 overflow-hidden px-6 transition-all duration-300"
+            >
+              <p class="text-gray-700 py-2 text-base">
+                Currently we offer national packages, but international tours
+                are coming soon.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button -->
+        <div class="flex justify-center mt-8">
+          <a class="btn-primary px-8 py-3 text-sm font-medium" href="#">
+            Contact Travel Expert
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ============================
+FAQ Section End
+============================ -->
+
+    <!-- ============================
+Planning Holiday Section Start
+============================= -->
+    <section class="w-full py-12">
+      <div class="container text-center">
+        <!-- Chip -->
+        <div class="chip mx-auto mb-6 w-fit">
+          <div class="chip-icon">
+            <img src="../assets/icon/Vector.png" alt="icon" />
+          </div>
+          <span class="chip-text">Free Tour Guide</span>
+        </div>
+
+        <!-- Title -->
+        <h2 class="section-title text-center mb-6">
+          Planning for a Holiday in Munnar?
+        </h2>
+
+        <!-- Button -->
+        <button
+          class="pl-6 pr-2 py-1.5 btn-white shadow-none border border-light gap-4"
+        >
+          <span>Contact Now</span>
+
+          <div
+            class="w-8 h-8 rounded-full bg-brand flex items-center justify-center"
+          >
+            <img
+              src="../assets/icon/arrow-up-right.png"
+              alt="arrow icon"
+              class="w-4 h-4 object-contain"
+            />
+          </div>
+        </button>
+      </div>
+    </section>
+    <!-- ============================
+Planning Holiday Section End
+============================= -->
+
+    <!-- ============================
+Contact & Useful Links Section Start
+============================= -->
+    <section class="w-full py-12 bg-[#F7F7F7]">
+      <div class="container">
+        <!-- Top Contact Row -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 text-center mb-16">
+          <!-- Call Us -->
+          <div class="flex flex-col items-center gap-3">
+            <img
+              src="../assets/icon/phone-call.png"
+              alt="call icon"
+              class="w-8 h-8"
+            />
+            <p class="text-sm text-neutral-600">Call us</p>
+            <p class="text-xl font-semibold text-neutral-900">
+              +91&nbsp;999&nbsp;500&nbsp;4276
+            </p>
+          </div>
+
+          <!-- Write Email -->
+          <div class="flex flex-col items-center gap-3">
+            <img
+              src="../assets/icon/mail.png"
+              alt="email icon"
+              class="w-8 h-8"
+            />
+            <p class="text-sm text-neutral-600">Write us an e-mail</p>
+            <p class="text-xl font-semibold text-neutral-900">
+              team@munnar.holiday
+            </p>
+          </div>
+
+          <!-- FAQs -->
+          <div class="flex flex-col items-center gap-3">
+            <img
+              src="../assets/icon/contact_support.png"
+              alt="faq icon"
+              class="w-8 h-8"
+            />
+            <p class="text-sm text-neutral-600">Find answers to questions</p>
+            <p class="text-xl font-semibold text-neutral-900">
+              Frequently Asked Question
+            </p>
+          </div>
+        </div>
+
+        <!-- Bottom Useful Links -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <!-- Tourist Attractions -->
+          <div>
+            <h3 class="text-lg font-semibold text-neutral-900 mb-4">
+              Tourist Attractions in Munnar
+            </h3>
+
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-3">
+              <li class="flex items-start gap-2">
+                <img
+                  src="../assets/icon/dropdown-menu-icon.png"
+                  class="w-4 h-4 mt-1"
+                />
+                <a href="#" class="text-neutral-700 hover:text-brand"
+                  >Bangalore to Munnar trip</a
+                >
+              </li>
+
+              <li class="flex items-start gap-2">
+                <img
+                  src="../assets/icon/dropdown-menu-icon.png"
+                  class="w-4 h-4 mt-1"
+                />
+                <a href="#" class="text-neutral-700 hover:text-brand"
+                  >Munnar Tourist Places</a
+                >
+              </li>
+
+              <li class="flex items-start gap-2">
+                <img
+                  src="../assets/icon/dropdown-menu-icon.png"
+                  class="w-4 h-4 mt-1"
+                />
+                <a href="#" class="text-neutral-700 hover:text-brand"
+                  >Munnar Honeymoon Spots</a
+                >
+              </li>
+
+              <li class="flex items-start gap-2">
+                <img
+                  src="../assets/icon/dropdown-menu-icon.png"
+                  class="w-4 h-4 mt-1"
+                />
+                <a href="#" class="text-neutral-700 hover:text-brand"
+                  >Best Munnar Homestays</a
+                >
+              </li>
+
+              <li class="flex items-start gap-2">
+                <img
+                  src="../assets/icon/dropdown-menu-icon.png"
+                  class="w-4 h-4 mt-1"
+                />
+                <a href="#" class="text-neutral-700 hover:text-brand"
+                  >Waterfalls in Munnar</a
+                >
+              </li>
+
+              <li class="flex items-start gap-2">
+                <img
+                  src="../assets/icon/dropdown-menu-icon.png"
+                  class="w-4 h-4 mt-1"
+                />
+                <a href="#" class="text-neutral-700 hover:text-brand"
+                  >Best Treks in Munnar</a
+                >
+              </li>
+
+              <li class="flex items-start gap-2">
+                <img
+                  src="../assets/icon/dropdown-menu-icon.png"
+                  class="w-4 h-4 mt-1"
+                />
+                <a href="#" class="text-neutral-700 hover:text-brand"
+                  >Top Station Munnar</a
+                >
+              </li>
+
+              <li class="flex items-start gap-2">
+                <img
+                  src="../assets/icon/dropdown-menu-icon.png"
+                  class="w-4 h-4 mt-1"
+                />
+                <a href="#" class="text-neutral-700 hover:text-brand"
+                  >Best Luxury Resorts in Munnar</a
+                >
+              </li>
+
+              <li class="flex items-start gap-2">
+                <img
+                  src="../assets/icon/dropdown-menu-icon.png"
+                  class="w-4 h-4 mt-1"
+                />
+                <a href="#" class="text-neutral-700 hover:text-brand"
+                  >Best Time to Visit Munnar</a
+                >
+              </li>
+
+              <li class="flex items-start gap-2">
+                <img
+                  src="../assets/icon/dropdown-menu-icon.png"
+                  class="w-4 h-4 mt-1"
+                />
+                <a href="#" class="text-neutral-700 hover:text-brand"
+                  >Vattavada Tourist Attractions</a
+                >
+              </li>
+
+              <li class="flex items-start gap-2">
+                <img
+                  src="../assets/icon/dropdown-menu-icon.png"
+                  class="w-4 h-4 mt-1"
+                />
+                <a href="#" class="text-neutral-700 hover:text-brand"
+                  >Munnar Treehouse Resorts</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Explore Hotels -->
+          <div>
+            <h3 class="text-lg font-semibold text-neutral-900 mb-4">
+              Explore Hotels by
+            </h3>
+
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-3">
+              <li class="flex items-start gap-2">
+                <img
+                  src="../assets/icon/dropdown-menu-icon.png"
+                  class="w-4 h-4 mt-1"
+                />
+                <a href="#" class="text-neutral-700 hover:text-brand"
+                  >3 star resorts</a
+                >
+              </li>
+
+              <li class="flex items-start gap-2">
+                <img
+                  src="../assets/icon/dropdown-menu-icon.png"
+                  class="w-4 h-4 mt-1"
+                />
+                <a href="#" class="text-neutral-700 hover:text-brand"
+                  >4 star resorts</a
+                >
+              </li>
+
+              <li class="flex items-start gap-2">
+                <img
+                  src="../assets/icon/dropdown-menu-icon.png"
+                  class="w-4 h-4 mt-1"
+                />
+                <a href="#" class="text-neutral-700 hover:text-brand"
+                  >5 star resorts</a
+                >
+              </li>
+
+              <li class="flex items-start gap-2">
+                <img
+                  src="../assets/icon/dropdown-menu-icon.png"
+                  class="w-4 h-4 mt-1"
+                />
+                <a href="#" class="text-neutral-700 hover:text-brand"
+                  >Boutique Resort</a
+                >
+              </li>
+
+              <li class="flex items-start gap-2">
+                <img
+                  src="../assets/icon/dropdown-menu-icon.png"
+                  class="w-4 h-4 mt-1"
+                />
+                <a href="#" class="text-neutral-700 hover:text-brand"
+                  >Treehouse Resorts</a
+                >
+              </li>
+
+              <li class="flex items-start gap-2">
+                <img
+                  src="../assets/icon/dropdown-menu-icon.png"
+                  class="w-4 h-4 mt-1"
+                />
+                <a href="#" class="text-neutral-700 hover:text-brand"
+                  >Homestays</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============================
+Contact & Useful Links Section End
+============================= -->
+
+    <!-- ============================
+Footer Section Start
+============================= -->
+    <footer
+      class="relative w-full text-white pt-12 bg-[url('../assets/images/banner.jpg')] bg-cover bg-center"
+    >
+      <!-- Dark gradient overlay -->
+      <div class="absolute inset-0 bg-linear-to-b from-black/40 to-black"></div>
+
+      <div class="container relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr_1.5fr] gap-12">
+          <!-- Column 1: Logo + Description + Contact -->
+          <div class="max-w-sm">
+            <img
+              src="../assets/images/light-logo.png"
+              alt="Munnar Holiday Logo"
+              class="w-40 mb-3"
+            />
+
+            <p class="text-sm leading-relaxed mb-6 text-gray-200">
+              Explore Munnar with ease with a trusted platform that helps you
+              plan better, stay better and enjoy every moment. We make your trip
+              simple with clear details, easy choices and travel support that
+              actually helps.
+            </p>
+          </div>
+
+          <!-- Column 2: Quick Links -->
+          <div>
+            <h3 class="text-base font-medium mb-5">Quick Links</h3>
+
+            <ul class="space-y-3 text-sm text-gray-200">
+              <li><a href="#" class="hover:text-brand">Home</a></li>
+              <li><a href="#" class="hover:text-brand">About us</a></li>
+              <li><a href="#" class="hover:text-brand">Tours</a></li>
+              <li><a href="#" class="hover:text-brand">Contact Us</a></li>
+              <li><a href="#" class="hover:text-brand">Blog</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Social Media -->
+          <div>
+            <h3 class="text-base font-medium mb-5">Follow Us</h3>
+
+            <div class="flex items-center gap-3">
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full border border-white/40 flex items-center justify-center hover:bg-white/20 transition"
+              >
+                <img src="../assets/icon/fb-icon.png" />
+              </a>
+
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full border border-white/40 flex items-center justify-center hover:bg-white/20 transition"
+              >
+                <img src="../assets/icon/LinkedIn-icon.png" />
+              </a>
+
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full border border-white/40 flex items-center justify-center hover:bg-white/20 transition"
+              >
+                <img src="../assets/icon/instagram-icon.png" />
+              </a>
+            </div>
+          </div>
+
+          <!-- Column 4: Newsletter -->
+          <div>
+            <h3 class="text-base text-[#D4D4D4] font-normal mb-3">
+              Get the latest Munnar deals tips and fresh travel ideas straight
+              to
+              <br />
+              your inbox
+            </h3>
+
+            <form
+              class="flex items-center bg-white rounded-lg overflow-hidden w-full max-w-xs mt-4"
+            >
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="px-4 py-2 text-sm w-full text-neutral-800 outline-none"
+              />
+              <button
+                type="submit"
+                class="bg-brand text-white px-5 py-2 text-sm font-medium cursor-pointer"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="mt-12 py-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-sm text-gray-300"
+        >
+          <div class="flex flex-col gap-1">
+            <div class="flex items-center gap-2">
+              <img src="../assets/icon/call.png" class="w-4" />
+              <span>+91 999 500 4276</span>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <img src="../assets/icon/light-email-icon.png" class="w-4" />
+              <span>team@munnar.holiday</span>
+            </div>
+
+            <div class="flex items-start gap-2">
+              <img src="../assets/icon/location-icon.png" class="w-4 mt-1" />
+              <span>
+                40/ 2770 A, Millennium Nagar P.O. Box: Edappally,<br />
+                Kochi, Kerala 682024, India
+              </span>
+            </div>
+          </div>
+
+          <!-- Right: Copyright -->
+          <div class="text-gray-300 text-left md:text-center">
+            2026 Munnar.Holiday | All rights reserved
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ============================
+Footer Section End
+============================= -->
 
     <script>
       const images = [
@@ -592,6 +2378,104 @@
       }
 
       highlightThumbs();
+
+      // function switchTab(tab) {
+      //   const tabs = ["itinerary", "included", "notincluded"];
+
+      //   tabs.forEach((t) => {
+      //     const button = document.getElementById("tab-" + t);
+      //     const content = document.getElementById("content-" + t);
+      //     const underline = button.querySelector("span");
+
+      //     if (t === tab) {
+      //       // ACTIVE TAB STYLE
+      //       button.classList.add("text-brand", "font-semibold");
+      //       button.classList.remove("text-neutral-700");
+      //       underline.classList.remove("hidden");
+      //       content.classList.add("active");
+      //     } else {
+      //       // INACTIVE TAB STYLE
+      //       button.classList.remove("text-brand");
+      //       button.classList.add("text-neutral-700");
+      //       underline.classList.add("hidden");
+      //       content.classList.remove("active");
+      //     }
+      //   });
+      // }
+
+      // function toggleAccordion(header) {
+      //   const content = header.nextElementSibling;
+      //   const arrow = header.querySelector(".accordion-arrow");
+
+      //   arrow.classList.toggle("rotate");
+      //   content.classList.toggle("active");
+      // }
+    </script>
+    <script>
+      /* ------------------------------
+      SMOOTH SCROLL
+  --------------------------------*/
+      function scrollToSection(id) {
+        const el = document.getElementById(id);
+        const offset = 120; // adjust based on sticky tab height
+
+        window.scrollTo({
+          top: el.offsetTop - offset,
+          behavior: "smooth",
+        });
+      }
+
+      /* ------------------------------
+      SCROLL to bottom
+  --------------------------------*/
+      const sections = document.querySelectorAll(".scroll-section");
+      const tabs = {
+        "section-itinerary": document.getElementById("tab-itinerary"),
+        "section-included": document.getElementById("tab-included"),
+        "section-notincluded": document.getElementById("tab-notincluded"),
+      };
+
+      window.addEventListener("scroll", () => {
+        let current = "";
+
+        sections.forEach((sec) => {
+          const secTop = sec.offsetTop - 350;
+          const secHeight = sec.offsetHeight;
+          const secBottom = secTop + secHeight;
+
+          // more accurate section detection
+          if (window.scrollY >= secTop && window.scrollY < secBottom) {
+            current = sec.id;
+          }
+        });
+
+        // reset all
+        Object.values(tabs).forEach((tab) => {
+          tab.classList.remove("text-brand");
+          tab.classList.add("text-neutral-700");
+          tab.querySelector(".tab-underline").classList.add("hidden");
+        });
+
+        // activate correct tab
+        if (tabs[current]) {
+          tabs[current].classList.add("text-brand");
+          tabs[current].classList.remove("text-neutral-700");
+          tabs[current]
+            .querySelector(".tab-underline")
+            .classList.remove("hidden");
+        }
+      });
+
+      /* ------------------------------
+      ACCORDION
+  --------------------------------*/
+      function toggleAccordion(header) {
+        const content = header.nextElementSibling;
+        const arrow = header.querySelector(".accordion-arrow");
+
+        content.classList.toggle("active");
+        arrow.classList.toggle("rotate-180");
+      }
     </script>
   </body>
 </html>
