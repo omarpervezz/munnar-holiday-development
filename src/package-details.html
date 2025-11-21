@@ -110,7 +110,7 @@
     <!-- ============================
          Header / Navbar Start
          ============================ -->
-    <header class="w-full bg-white py-2 md:py-3">
+    <header class="w-full bg-white py-2 md:py-3 sticky top-0 z-50 shadow-sm">
       <div class="container flex items-center justify-between gap-4 py-2">
         <a
           href="/"
@@ -125,6 +125,7 @@
         </a>
 
         <button
+          id="openMenuBtn"
           class="lg:hidden flex items-center justify-center w-10 h-10 rounded-full border border-light cursor-pointer"
           aria-label="Open menu"
         >
@@ -218,7 +219,7 @@
                     <div class="space-y-5">
                       <a href="#" class="flex items-start gap-2 group w-fit">
                         <img
-                          src="../assets/icon/green-up-right-arrow.png"
+                          src="../assets/icon/dropdown-menu-icon.png"
                           class="w-4 h-4 mt-[3px]"
                         />
                         <span
@@ -229,7 +230,7 @@
 
                       <a href="#" class="flex items-start gap-2 group w-fit">
                         <img
-                          src="../assets/icon/green-up-right-arrow.png"
+                          src="../assets/icon/dropdown-menu-icon.png"
                           class="w-4 h-4 mt-[3px]"
                         />
                         <span
@@ -240,7 +241,7 @@
 
                       <a href="#" class="flex items-start gap-2 group w-fit">
                         <img
-                          src="../assets/icon/green-up-right-arrow.png"
+                          src="../assets/icon/dropdown-menu-icon.png"
                           class="w-4 h-4 mt-[3px]"
                         />
                         <span
@@ -254,7 +255,7 @@
                     <div class="space-y-5">
                       <a href="#" class="flex items-start gap-2 group w-fit">
                         <img
-                          src="../assets/icon/green-up-right-arrow.png"
+                          src="../assets/icon/dropdown-menu-icon.png"
                           class="w-4 h-4 mt-[3px]"
                         />
                         <span
@@ -265,7 +266,7 @@
 
                       <a href="#" class="flex items-start gap-2 group w-fit">
                         <img
-                          src="../assets/icon/green-up-right-arrow.png"
+                          src="../assets/icon/dropdown-menu-icon.png"
                           class="w-4 h-4 mt-[3px]"
                         />
                         <span
@@ -276,7 +277,7 @@
 
                       <a href="#" class="flex items-start gap-2 group w-fit">
                         <img
-                          src="../assets/icon/green-up-right-arrow.png"
+                          src="../assets/icon/dropdown-menu-icon.png"
                           class="w-4 h-4 mt-[3px]"
                         />
                         <span
@@ -344,21 +345,126 @@
     <!-- ============================
          Header / Navbar End
          ============================ -->
+    <!-- ============================
+     Mobile Menu Start
+============================= -->
+    <div
+      id="mobileOverlay"
+      class="fixed inset-0 bg-black/50 z-60 hidden opacity-0 transition-opacity duration-300"
+    ></div>
 
+    <aside
+      id="mobileMenu"
+      class="fixed top-0 left-0 h-full w-[85%] max-w-[320px] bg-white shadow-xl z-70 -translate-x-full transition-transform duration-300 overflow-y-auto"
+    >
+      <div class="p-5 border-b border-light flex items-center justify-between">
+        <img src="../assets/images/logo.png" class="h-7" alt="Munnar Holiday" />
+        <button
+          id="closeMenuBtn"
+          class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center z-10 cursor-pointer border border-light bg-white/90 hover:bg-white rounded-full"
+        >
+          ✕
+        </button>
+      </div>
+
+      <nav class="p-5 space-y-4 text-[16px] font-medium text-neutral-800">
+        <!-- Home -->
+        <a href="/" class="flex items-center gap-3 py-2">
+          <img src="../assets/icon/home.png" class="w-4 h-4" /> Home
+        </a>
+
+        <!-- Munnar Tours (Dropdown) -->
+        <div class="border-t border-light pt-4">
+          <button
+            id="mobileTourToggle"
+            class="w-full flex items-center justify-between py-2 text-left cursor-pointer"
+          >
+            <span>Munnar Tours</span>
+            <img
+              src="../assets/icon/arrow_drop_down_hide.png"
+              class="transition-transform"
+              id="mobileTourArrow"
+            />
+          </button>
+
+          <!-- Dropdown Content -->
+          <div id="mobileTourMenu" class="ml-4 mt-2 hidden space-y-3">
+            <!-- List Items -->
+            <div class="grid grid-cols-1 gap-5">
+              <a href="#" class="flex items-center gap-2">
+                <img src="../assets/icon/dropdown-menu-icon.png" />
+                Kerala tour packages
+              </a>
+
+              <a href="#" class="flex items-center gap-2">
+                <img src="../assets/icon/dropdown-menu-icon.png" />
+                Munnar couple packages
+              </a>
+
+              <a href="#" class="flex items-center gap-2">
+                <img src="../assets/icon/dropdown-menu-icon.png" />
+                Munnar adventure packages
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog -->
+        <a href="#" class="flex items-center gap-3 py-2">
+          Munnar Insider Blog
+        </a>
+
+        <!-- Contact -->
+        <a href="#" class="flex items-center gap-3 py-2"> Contact Us </a>
+
+        <div class="pt-6 space-y-3 border-t border-light mt-6">
+          <a
+            href="tel:+919995004278"
+            class="btn-primary w-full flex items-center justify-center gap-2"
+          >
+            <img src="../assets/icon/call.png" /> +91 999 500 4278
+          </a>
+
+          <a
+            href="#holiday-plan"
+            class="btn-primary w-full flex items-center justify-center gap-2"
+          >
+            <img src="../assets/icon/featured_seasonal_and_gifts.png" />
+            Get a FREE Holiday Plan
+          </a>
+        </div>
+      </nav>
+    </aside>
+
+    <!-- ============================
+     Mobile Menu End
+============================= -->
     <!-- ============================
          Gallery Start
          ============================ -->
 
     <section class="w-full py-4">
       <div class="container">
-        <div class="text-sm text-neutral-600 mb-5 flex items-center gap-1">
-          <a href="/" class="hover:text-brand">Home</a>
-          <span>/</span>
-          <a href="#" class="hover:text-brand">Kerala tour packages</a>
-          <span>/</span>
-          <a href="#" class="hover:text-brand">4 days packages</a>
-          <span>/</span>
-          <span class="text-brand font-medium">Best of Kerala packages</span>
+        <!-- Breadcrumbs -->
+        <div
+          class="text-sm text-neutral-600 mb-5 flex flex-wrap items-center gap-x-1 gap-y-0.5 leading-snug"
+        >
+          <a href="/" class="hover:text-brand whitespace-nowrap">Home</a>
+          <span class="whitespace-nowrap">/</span>
+
+          <a href="#" class="hover:text-brand whitespace-nowrap"
+            >Kerala tour packages</a
+          >
+          <span class="whitespace-nowrap">/</span>
+
+          <a href="#" class="hover:text-brand whitespace-nowrap"
+            >4 days packages</a
+          >
+          <span class="whitespace-nowrap">/</span>
+
+          <span class="text-brand font-medium whitespace-nowrap">
+            Best of Kerala packages
+          </span>
         </div>
         <!-- Package Name -->
         <h1
@@ -378,7 +484,7 @@
               <img
                 id="mainImage"
                 src="../assets/images/package-details-carousel-main-image.jpg"
-                class="w-full h-[380px] sm:h-[450px] object-cover transition-all duration-500 fade"
+                class="w-full h-[360px] sm:h-[410px] object-cover transition-all duration-500 fade"
               />
 
               <!-- Left Arrow -->
@@ -451,93 +557,96 @@
      RIGHT SIDE — PRICING BOX
 ============================= -->
           <div class="w-full lg:w-1/3">
-            <div class="w-full border border-light rounded-xl p-9">
-              <!-- Top: Our packages + INR pill (with bottom border) -->
+            <div class="w-full border border-light rounded-xl p-3 lg:p-5">
+              <!-- Top: Our packages -->
               <div
                 class="flex items-center justify-between pb-3 border-b border-light"
               >
-                <p
-                  class="text-[15px] sm:text-[16px] font-medium text-neutral-900"
-                >
+                <p class="text-base font-medium text-neutral-900">
                   Our packages
                 </p>
+                <div class="relative inline-block">
+                  <select
+                    class="appearance-none rounded-full border border-neutral-300 px-3 py-1 pr-8 text-sm font-medium text-neutral-800 bg-white cursor-pointer focus:outline-none"
+                  >
+                    <option>₹ INR</option>
+                    <option>$ USD</option>
+                    <option>€ EUR</option>
+                  </select>
 
-                <button
-                  type="button"
-                  class="inline-flex items-center gap-1 rounded-full border border-light px-3 py-1 text-[13px] font-medium text-neutral-900"
-                >
-                  <span>₹</span>
-                  <span>INR</span>
-                  <span class="text-xs">&#9662;</span>
-                  <!-- small down arrow -->
-                </button>
+                  <span
+                    class="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-xs text-neutral-700"
+                    >&#9662;</span
+                  >
+                </div>
               </div>
 
-              <!-- Duration + Price row (with bottom border) -->
+              <!-- Duration + Price -->
               <div
                 class="flex items-start justify-between py-4 border-b border-light"
               >
-                <!-- Left: duration -->
-                <p
-                  class="text-[16px] sm:text-[17px] font-medium text-neutral-900"
-                >
-                  4 Nights, 5 Days
+                <p class="text-[17px] font-medium text-neutral-900">
+                  4 Nights, 2 Nights
                 </p>
 
-                <!-- Right: price -->
                 <div class="text-right">
                   <p
-                    class="text-[22px] sm:text-[24px] font-semibold text-neutral-900"
+                    class="text-2xl font-semibold text-neutral-900 leading-tight"
                   >
                     ₹14,300
                   </p>
-                  <p class="text-[12px] text-neutral-600 mt-0.5">Per Person</p>
+                  <p class="text-[13px] text-neutral-600 mt-1">Per Person</p>
                 </div>
               </div>
 
-              <!-- Rating centered -->
-              <div class="flex items-center justify-center gap-1 mt-4 mb-6">
+              <!-- Rating -->
+              <div class="flex items-center justify-center gap-1 mt-4 mb-5">
                 <img src="../assets/icon/star.png" class="w-4 h-4" />
                 <img src="../assets/icon/star.png" class="w-4 h-4" />
                 <img src="../assets/icon/star.png" class="w-4 h-4" />
                 <img src="../assets/icon/star.png" class="w-4 h-4" />
                 <img src="../assets/icon/star.png" class="w-4 h-4" />
-                <span class="text-xl text-neutral-900 font-semibold ml-2"
-                  >(20+ Reviews)</span
+                <span class="text-base font-semibold text-neutral-900 ml-2">
+                  (20+ Reviews)
+                </span>
+              </div>
+
+              <div class="space-y-3">
+                <!-- Book Now Button -->
+                <a
+                  class="w-full flex items-center justify-between bg-brand text-white rounded-full text-sm font-medium pl-5 pr-[5px] py-1 hover:bg-brand-dark transition"
                 >
+                  Book now
+                  <div
+                    class="flex items-center justify-center rounded-full bg-white shadow-md cursor-pointer w-9 h-9"
+                  >
+                    <img src="../assets/icon/green-up-right-arrow.png" />
+                  </div>
+                </a>
+                <!-- Secondary Button -->
+                <a
+                  class="flex w-full items-center justify-between rounded-full border border-light bg-transparent pl-5 pr-[5px] py-1 text-base font-medium text-neutral-900 transition"
+                >
+                  Request a Detailed Itenarary
+                  <div
+                    class="flex h-9 w-9 items-center justify-center rounded-full bg-transparent cursor-pointer"
+                  >
+                    <img
+                      src="../assets/icon/green-up-right-arrow.png"
+                      class="h-4 w-4"
+                    />
+                  </div>
+                </a>
               </div>
 
-              <!-- Book Now Button -->
-              <button class="btn-book w-full">
-                Book now
-                <div class="btn-circle bg-white w-9 h-9">
-                  <img
-                    src="../assets/icon/green-up-right-arrow.png"
-                    class="w-4 h-4"
-                  />
-                </div>
-              </button>
-
-              <!-- Secondary Button -->
-              <button
-                class="w-full mt-3 flex items-center justify-between border border-light rounded-full px-6 py-3 text-[14px] sm:text-[15px] text-neutral-900 font-medium hover:bg-neutral-100 transition cursor-pointer"
-              >
-                Request a Detailed Itinerary
-                <img
-                  src="../assets/icon/green-up-right-arrow.png"
-                  class="w-4 h-4 opacity-80"
-                />
-              </button>
-
-              <!-- Promise row -->
+              <!-- Promise -->
               <div class="flex items-start gap-3 mt-7">
                 <img src="../assets/icon/trust-icon.png" class="w-10 h-10" />
-                <p
-                  class="text-[13px] sm:text-[14px] text-neutral-700 leading-snug"
-                >
+                <p class="text-[14px] text-neutral-700 leading-snug">
                   <span class="font-semibold text-neutral-900">
-                    Munnar Holidays Promise </span
-                  ><br />
+                    Munnar Holidays Promise
+                  </span>
+                  <br />
                   Satisfaction guaranteed — Hassle-free booking
                 </p>
               </div>
@@ -565,7 +674,7 @@
   ========================== -->
             <div
               id="tabs-wrapper"
-              class="sticky top-0 z-20 bg-white flex items-center gap-8 mb-5 py-2"
+              class="sticky top-20 z-20 bg-white flex items-center gap-8 mb-5 py-2"
             >
               <button
                 id="tab-itinerary"
@@ -606,15 +715,17 @@
   ========================== -->
             <section id="section-itinerary" class="scroll-section pb-5">
               <!-- DAY 1 -->
-              <div class="accordion-item mb-5">
+              <div
+                class="mb-4 border border-light rounded-xl overflow-hidden bg-white"
+              >
                 <button
-                  class="accordion-header"
+                  class="w-full flex items-center justify-between p-5 cursor-pointer text-left transition-colors duration-200 hover:bg-neutral-50"
                   onclick="toggleAccordion(this)"
                 >
                   <div class="flex items-center gap-3">
                     <img
                       src="../assets/icon/keyboard_arrow_down.png"
-                      class="accordion-arrow w-4 h-4 rotate-0 transition-transform"
+                      class="w-auto h-auto transition-transform rotate-0 duration-300 shrink-0 accordion-arrow"
                     />
                     <p
                       class="font-semibold text-neutral-900 text-[15px] sm:text-[16px]"
@@ -624,7 +735,9 @@
                   </div>
                 </button>
 
-                <div class="accordion-content active">
+                <div
+                  class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out active"
+                >
                   <p class="text-[15px] leading-relaxed mt-3 text-neutral-700">
                     Your journey will likely begin at Kochi’s Cochin
                     International Airport...
@@ -662,15 +775,17 @@
               </div>
 
               <!-- DAY 2 -->
-              <div class="accordion-item mb-5">
+              <div
+                class="mb-4 border border-light rounded-xl overflow-hidden bg-white"
+              >
                 <button
-                  class="accordion-header"
+                  class="w-full flex items-center justify-between p-5 cursor-pointer text-left transition-colors duration-200 hover:bg-neutral-50"
                   onclick="toggleAccordion(this)"
                 >
                   <div class="flex items-center gap-3">
                     <img
                       src="../assets/icon/keyboard_arrow_down.png"
-                      class="accordion-arrow w-4 h-4 rotate-0 transition-transform"
+                      class="w-auto h-auto transition-transform rotate-0 duration-300 shrink-0 accordion-arrow"
                     />
                     <p
                       class="font-semibold text-neutral-900 text-[15px] sm:text-[16px]"
@@ -680,7 +795,9 @@
                   </div>
                 </button>
 
-                <div class="accordion-content active">
+                <div
+                  class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out active"
+                >
                   <p class="text-[15px] leading-relaxed mt-3 text-neutral-700">
                     Your journey will likely begin at Kochi’s Cochin
                     International Airport...
@@ -714,15 +831,17 @@
               </div>
 
               <!-- DAY 3 -->
-              <div class="accordion-item mb-5">
+              <div
+                class="mb-4 border border-light rounded-xl overflow-hidden bg-white"
+              >
                 <button
-                  class="accordion-header"
+                  class="w-full flex items-center justify-between p-5 cursor-pointer text-left transition-colors duration-200 hover:bg-neutral-50"
                   onclick="toggleAccordion(this)"
                 >
                   <div class="flex items-center gap-3">
                     <img
                       src="../assets/icon/keyboard_arrow_down.png"
-                      class="accordion-arrow w-4 h-4 rotate-0 transition-transform"
+                      class="w-auto h-auto transition-transform rotate-0 duration-300 shrink-0 accordion-arrow"
                     />
                     <p
                       class="font-semibold text-neutral-900 text-[15px] sm:text-[16px]"
@@ -732,7 +851,9 @@
                   </div>
                 </button>
 
-                <div class="accordion-content active">
+                <div
+                  class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out active"
+                >
                   <p class="text-[15px] leading-relaxed mt-3 text-neutral-700">
                     Your journey will likely begin at Kochi’s Cochin
                     International Airport...
@@ -775,42 +896,54 @@
               </h2>
 
               <div class="space-y-4">
-                <div class="info-card flex items-center gap-3 py-4 px-5">
+                <div
+                  class="bg-linear-to-br from-white to-neutral-50 rounded-xl p-3 border border-light flex items-center gap-3 py-4 px-5"
+                >
                   <img src="../assets/icon/verified.png" class="w-5 h-5" />
                   <p class="text-[15px] text-neutral-800 font-semibold">
                     Accommodation in 3 Star resort
                   </p>
                 </div>
 
-                <div class="info-card flex items-center gap-3 py-4 px-5">
+                <div
+                  class="bg-linear-to-br from-white to-neutral-50 rounded-xl p-3 border border-light flex items-center gap-3 py-4 px-5"
+                >
                   <img src="../assets/icon/verified.png" class="w-5 h-5" />
                   <p class="text-[15px] text-neutral-800 font-semibold">
                     Private Vehicle with Chauffeur for 3 Days for Sightseeing
                   </p>
                 </div>
 
-                <div class="info-card flex items-center gap-3 py-4 px-5">
+                <div
+                  class="bg-linear-to-br from-white to-neutral-50 rounded-xl p-3 border border-light flex items-center gap-3 py-4 px-5"
+                >
                   <img src="../assets/icon/verified.png" class="w-5 h-5" />
                   <p class="text-[15px] text-neutral-800 font-semibold">
                     Airport/Hotel Transfers
                   </p>
                 </div>
 
-                <div class="info-card flex items-center gap-3 py-4 px-5">
+                <div
+                  class="bg-linear-to-br from-white to-neutral-50 rounded-xl p-3 border border-light flex items-center gap-3 py-4 px-5"
+                >
                   <img src="../assets/icon/verified.png" class="w-5 h-5" />
                   <p class="text-[15px] text-neutral-800 font-semibold">
                     All applicable taxes including GST of 5%
                   </p>
                 </div>
 
-                <div class="info-card flex items-center gap-3 py-4 px-5">
+                <div
+                  class="bg-linear-to-br from-white to-neutral-50 rounded-xl p-3 border border-light flex items-center gap-3 py-4 px-5"
+                >
                   <img src="../assets/icon/verified.png" class="w-5 h-5" />
                   <p class="text-[15px] text-neutral-800 font-semibold">
                     Breakfast in All Resorts
                   </p>
                 </div>
 
-                <div class="info-card flex items-center gap-3 py-4 px-5">
+                <div
+                  class="bg-linear-to-br from-white to-neutral-50 rounded-xl p-3 border border-light flex items-center gap-3 py-4 px-5"
+                >
                   <img src="../assets/icon/verified.png" class="w-5 h-5" />
                   <p class="text-[15px] text-neutral-800 font-semibold">
                     All Meals Included for Houseboat
@@ -828,35 +961,45 @@
               </h2>
 
               <div class="space-y-4">
-                <div class="info-card flex items-center gap-3 py-4 px-5">
+                <div
+                  class="bg-linear-to-br from-white to-neutral-50 rounded-xl p-3 border border-light flex items-center gap-3 py-4 px-5"
+                >
                   <img src="../assets/icon/verified.png" class="w-5 h-5" />
                   <p class="text-[15px] text-neutral-800 font-semibold">
                     Accommodation in 3 Star resort
                   </p>
                 </div>
 
-                <div class="info-card flex items-center gap-3 py-4 px-5">
+                <div
+                  class="bg-linear-to-br from-white to-neutral-50 rounded-xl p-3 border border-light flex items-center gap-3 py-4 px-5"
+                >
                   <img src="../assets/icon/verified.png" class="w-5 h-5" />
                   <p class="text-[15px] text-neutral-800 font-semibold">
                     Private Vehicle with Chauffeur for 3 Days for Sightseeing
                   </p>
                 </div>
 
-                <div class="info-card flex items-center gap-3 py-4 px-5">
+                <div
+                  class="bg-linear-to-br from-white to-neutral-50 rounded-xl p-3 border border-light flex items-center gap-3 py-4 px-5"
+                >
                   <img src="../assets/icon/verified.png" class="w-5 h-5" />
                   <p class="text-[15px] text-neutral-800 font-semibold">
                     Airport/Hotel Transfers
                   </p>
                 </div>
 
-                <div class="info-card flex items-center gap-3 py-4 px-5">
+                <div
+                  class="bg-linear-to-br from-white to-neutral-50 rounded-xl p-3 border border-light flex items-center gap-3 py-4 px-5"
+                >
                   <img src="../assets/icon/verified.png" class="w-5 h-5" />
                   <p class="text-[15px] text-neutral-800 font-semibold">
                     All applicable taxes including GST of 5%
                   </p>
                 </div>
 
-                <div class="info-card flex items-center gap-3 py-4 px-5">
+                <div
+                  class="bg-linear-to-br from-white to-neutral-50 rounded-xl p-3 border border-light flex items-center gap-3 py-4 px-5"
+                >
                   <img src="../assets/icon/verified.png" class="w-5 h-5" />
                   <p class="text-[15px] text-neutral-800 font-semibold">
                     Breakfast in All Resorts
@@ -1111,233 +1254,328 @@
           Chill out and have fun: Awesome holiday deals just for you!
         </h2>
 
-        <!-- GRID -->
+        <!--Similar Pacakge GRID -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- Card 1 -->
-          <div class="package-card">
-            <span class="package-tag tag-popular">Popular</span>
+          <div
+            class="relative bg-white rounded-xl shadow-md overflow-hidden flex flex-col"
+          >
+            <span
+              class="absolute top-4 left-0 px-3 py-1.5 text-xs font-semibold text-white rounded-r-full rounded-l-md bg-accent-warm"
+              >Popular</span
+            >
 
             <img
               src="../assets/images/package-image-1.jpg"
               class="w-full h-48 object-cover"
             />
 
-            <div class="package-content">
-              <p class="package-title">Munnar Adventure Trip</p>
+            <div class="p-5 space-y-3">
+              <p
+                class="font-semibold text-neutral-900 leading-snug text-lg md:text-xl"
+              >
+                Munnar Adventure Trip
+              </p>
 
-              <div class="rating-row">
-                <img src="../assets/icon/star.png" class="w-4 h-4" />
-                <img src="../assets/icon/star.png" class="w-4 h-4" />
-                <img src="../assets/icon/star.png" class="w-4 h-4" />
-                <img src="../assets/icon/star.png" class="w-4 h-4" />
-                <img src="../assets/icon/star.png" class="w-4 h-4" />
+              <div class="flex items-center gap-1">
+                <img src="../assets/icon/star.png" />
+                <img src="../assets/icon/star.png" />
+                <img src="../assets/icon/star.png" />
+                <img src="../assets/icon/star.png" />
+                <img src="../assets/icon/star.png" />
                 <span class="text-base font-medium">(20+ Reviews)</span>
               </div>
 
-              <div class="package-info">
-                <span class="package-title">5 Days</span>
-                <span class="package-titles">₹6099 / $88</span>
+              <div class="flex items-center justify-between">
+                <span
+                  class="font-semibold text-neutral-900 leading-snug text-lg md:text-xl"
+                  >5 Days</span
+                >
+                <span
+                  class="font-semibold text-neutral-900 leading-snug text-lg md:text-xl"
+                  >₹6099 / $88</span
+                >
               </div>
 
-              <button class="btn-book">
+              <a
+                class="w-full flex items-center justify-between bg-brand text-white rounded-full text-sm font-medium pl-5 pr-[5px] py-1 hover:bg-brand-dark transition"
+              >
                 Book now
-                <div class="btn-circle bg-white w-9 h-9">
-                  <img
-                    src="../assets/icon/green-up-right-arrow.png"
-                    class="w-4 h-4"
-                  />
+                <div
+                  class="flex items-center justify-center rounded-full bg-white shadow-md cursor-pointer w-9 h-9"
+                >
+                  <img src="../assets/icon/green-up-right-arrow.png" />
                 </div>
-              </button>
+              </a>
             </div>
           </div>
 
           <!-- Card 2 -->
-          <div class="package-card">
-            <span class="package-tag tag-budget">Budget Friendly</span>
-
-            <img
-              src="../assets/images/package-image-2.jpg"
-              class="w-full h-48 object-cover"
-            />
-
-            <div class="package-content">
-              <p class="package-title">Call Of The Hills - Hill Station</p>
-
-              <div class="rating-row">
-                <img src="../assets/icon/star.png" class="w-4 h-4" />
-                <img src="../assets/icon/star.png" class="w-4 h-4" />
-                <img src="../assets/icon/star.png" class="w-4 h-4" />
-                <img src="../assets/icon/star.png" class="w-4 h-4" />
-                <img src="../assets/icon/star.png" class="w-4 h-4" />
-                <span class="text-base font-medium">(20+ Reviews)</span>
-              </div>
-
-              <div class="package-info">
-                <span class="package-title">5 Days</span>
-                <span class="package-titles">₹6099 / $88</span>
-              </div>
-
-              <button class="btn-book">
-                Book now
-                <div class="btn-circle bg-white w-9 h-9">
-                  <img
-                    src="../assets/icon/green-up-right-arrow.png"
-                    class="w-4 h-4"
-                  />
-                </div>
-              </button>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="package-card">
-            <span class="package-tag tag-romantic">Romantic</span>
-
-            <img
-              src="../assets/images/package-image-3.jpg"
-              class="w-full h-48 object-cover"
-            />
-
-            <div class="package-content">
-              <p class="package-title">Colors Of Kerala Honeymoon</p>
-
-              <div class="rating-row">
-                <img src="../assets/icon/star.png" class="w-4 h-4" />
-                <img src="../assets/icon/star.png" class="w-4 h-4" />
-                <img src="../assets/icon/star.png" class="w-4 h-4" />
-                <img src="../assets/icon/star.png" class="w-4 h-4" />
-                <img src="../assets/icon/star.png" class="w-4 h-4" />
-                <span class="text-base font-medium">(20+ Reviews)</span>
-              </div>
-
-              <div class="package-info">
-                <span class="package-title">5 Days</span>
-                <span class="package-titles">₹6099 / $88</span>
-              </div>
-
-              <button class="btn-book">
-                Book now
-                <div class="btn-circle bg-white w-9 h-9">
-                  <img
-                    src="../assets/icon/green-up-right-arrow.png"
-                    class="w-4 h-4"
-                  />
-                </div>
-              </button>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="package-card">
-            <span class="package-tag tag-popular">Popular</span>
-
-            <img
-              src="../assets/images/package-image-4.jpg"
-              class="w-full h-48 object-cover"
-            />
-
-            <div class="package-content">
-              <p class="package-title">Grand Tour Of Munnar</p>
-
-              <div class="rating-row">
-                <img src="../assets/icon/star.png" class="w-4 h-4" />
-                <img src="../assets/icon/star.png" class="w-4 h-4" />
-                <img src="../assets/icon/star.png" class="w-4 h-4" />
-                <img src="../assets/icon/star.png" class="w-4 h-4" />
-                <img src="../assets/icon/star.png" class="w-4 h-4" />
-                <span class="text-base font-medium">(20+ Reviews)</span>
-              </div>
-
-              <div class="package-info">
-                <span class="package-title">5 Days</span>
-                <span class="package-titles">₹6099 / $88</span>
-              </div>
-
-              <button class="btn-book">
-                Book now
-                <div class="btn-circle bg-white w-9 h-9">
-                  <img
-                    src="../assets/icon/green-up-right-arrow.png"
-                    class="w-4 h-4"
-                  />
-                </div>
-              </button>
-            </div>
-          </div>
-
-          <!-- Card 5 -->
-          <div class="package-card">
-            <span class="package-tag tag-budget">Budget Friendly</span>
+          <div
+            class="relative bg-white rounded-xl shadow-md overflow-hidden flex flex-col"
+          >
+            <span
+              class="absolute top-4 left-0 px-3 py-1.5 text-xs font-semibold text-white rounded-r-full rounded-l-md bg-accent-green"
+              >Popular</span
+            >
 
             <img
               src="../assets/images/package-image-1.jpg"
               class="w-full h-48 object-cover"
             />
 
-            <div class="package-content">
-              <p class="package-title">Call Of The Hills - Hill Station</p>
+            <div class="p-5 space-y-3">
+              <p
+                class="font-semibold text-neutral-900 leading-snug text-lg md:text-xl"
+              >
+                Munnar Adventure Trip
+              </p>
 
-              <div class="rating-row">
-                <img src="../assets/icon/star.png" class="w-4 h-4" />
-                <img src="../assets/icon/star.png" class="w-4 h-4" />
-                <img src="../assets/icon/star.png" class="w-4 h-4" />
-                <img src="../assets/icon/star.png" class="w-4 h-4" />
-                <img src="../assets/icon/star.png" class="w-4 h-4" />
+              <div class="flex items-center gap-1">
+                <img src="../assets/icon/star.png" />
+                <img src="../assets/icon/star.png" />
+                <img src="../assets/icon/star.png" />
+                <img src="../assets/icon/star.png" />
+                <img src="../assets/icon/star.png" />
                 <span class="text-base font-medium">(20+ Reviews)</span>
               </div>
 
-              <div class="package-info">
-                <span class="package-title">5 Days</span>
-                <span class="package-titles">₹6099 / $88</span>
+              <div class="flex items-center justify-between">
+                <span
+                  class="font-semibold text-neutral-900 leading-snug text-lg md:text-xl"
+                  >5 Days</span
+                >
+                <span
+                  class="font-semibold text-neutral-900 leading-snug text-lg md:text-xl"
+                  >₹6099 / $88</span
+                >
               </div>
 
-              <button class="btn-book">
+              <a
+                class="w-full flex items-center justify-between bg-brand text-white rounded-full text-sm font-medium pl-5 pr-[5px] py-1 hover:bg-brand-dark transition"
+              >
                 Book now
-                <div class="btn-circle bg-white w-9 h-9">
-                  <img
-                    src="../assets/icon/green-up-right-arrow.png"
-                    class="w-4 h-4"
-                  />
+                <div
+                  class="flex items-center justify-center rounded-full bg-white shadow-md cursor-pointer w-9 h-9"
+                >
+                  <img src="../assets/icon/green-up-right-arrow.png" />
                 </div>
-              </button>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="relative bg-white rounded-xl shadow-md overflow-hidden flex flex-col"
+          >
+            <span
+              class="absolute top-4 left-0 px-3 py-1.5 text-xs font-semibold text-white rounded-r-full rounded-l-md bg-accent-purple"
+              >Popular</span
+            >
+
+            <img
+              src="../assets/images/package-image-1.jpg"
+              class="w-full h-48 object-cover"
+            />
+
+            <div class="p-5 space-y-3">
+              <p
+                class="font-semibold text-neutral-900 leading-snug text-lg md:text-xl"
+              >
+                Munnar Adventure Trip
+              </p>
+
+              <div class="flex items-center gap-1">
+                <img src="../assets/icon/star.png" />
+                <img src="../assets/icon/star.png" />
+                <img src="../assets/icon/star.png" />
+                <img src="../assets/icon/star.png" />
+                <img src="../assets/icon/star.png" />
+                <span class="text-base font-medium">(20+ Reviews)</span>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <span
+                  class="font-semibold text-neutral-900 leading-snug text-lg md:text-xl"
+                  >5 Days</span
+                >
+                <span
+                  class="font-semibold text-neutral-900 leading-snug text-lg md:text-xl"
+                  >₹6099 / $88</span
+                >
+              </div>
+
+              <a
+                class="w-full flex items-center justify-between bg-brand text-white rounded-full text-sm font-medium pl-5 pr-[5px] py-1 hover:bg-brand-dark transition"
+              >
+                Book now
+                <div
+                  class="flex items-center justify-center rounded-full bg-white shadow-md cursor-pointer w-9 h-9"
+                >
+                  <img src="../assets/icon/green-up-right-arrow.png" />
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div
+            class="relative bg-white rounded-xl shadow-md overflow-hidden flex flex-col"
+          >
+            <span
+              class="absolute top-4 left-0 px-3 py-1.5 text-xs font-semibold text-white rounded-r-full rounded-l-md bg-accent-warm"
+              >Popular</span
+            >
+
+            <img
+              src="../assets/images/package-image-1.jpg"
+              class="w-full h-48 object-cover"
+            />
+
+            <div class="p-5 space-y-3">
+              <p
+                class="font-semibold text-neutral-900 leading-snug text-lg md:text-xl"
+              >
+                Munnar Adventure Trip
+              </p>
+
+              <div class="flex items-center gap-1">
+                <img src="../assets/icon/star.png" />
+                <img src="../assets/icon/star.png" />
+                <img src="../assets/icon/star.png" />
+                <img src="../assets/icon/star.png" />
+                <img src="../assets/icon/star.png" />
+                <span class="text-base font-medium">(20+ Reviews)</span>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <span
+                  class="font-semibold text-neutral-900 leading-snug text-lg md:text-xl"
+                  >5 Days</span
+                >
+                <span
+                  class="font-semibold text-neutral-900 leading-snug text-lg md:text-xl"
+                  >₹6099 / $88</span
+                >
+              </div>
+
+              <a
+                class="w-full flex items-center justify-between bg-brand text-white rounded-full text-sm font-medium pl-5 pr-[5px] py-1 hover:bg-brand-dark transition"
+              >
+                Book now
+                <div
+                  class="flex items-center justify-center rounded-full bg-white shadow-md cursor-pointer w-9 h-9"
+                >
+                  <img src="../assets/icon/green-up-right-arrow.png" />
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div
+            class="relative bg-white rounded-xl shadow-md overflow-hidden flex flex-col"
+          >
+            <span
+              class="absolute top-4 left-0 px-3 py-1.5 text-xs font-semibold text-white rounded-r-full rounded-l-md bg-accent-green"
+              >Popular</span
+            >
+
+            <img
+              src="../assets/images/package-image-1.jpg"
+              class="w-full h-48 object-cover"
+            />
+
+            <div class="p-5 space-y-3">
+              <p
+                class="font-semibold text-neutral-900 leading-snug text-lg md:text-xl"
+              >
+                Munnar Adventure Trip
+              </p>
+
+              <div class="flex items-center gap-1">
+                <img src="../assets/icon/star.png" />
+                <img src="../assets/icon/star.png" />
+                <img src="../assets/icon/star.png" />
+                <img src="../assets/icon/star.png" />
+                <img src="../assets/icon/star.png" />
+                <span class="text-base font-medium">(20+ Reviews)</span>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <span
+                  class="font-semibold text-neutral-900 leading-snug text-lg md:text-xl"
+                  >5 Days</span
+                >
+                <span
+                  class="font-semibold text-neutral-900 leading-snug text-lg md:text-xl"
+                  >₹6099 / $88</span
+                >
+              </div>
+
+              <a
+                class="w-full flex items-center justify-between bg-brand text-white rounded-full text-sm font-medium pl-5 pr-[5px] py-1 hover:bg-brand-dark transition"
+              >
+                Book now
+                <div
+                  class="flex items-center justify-center rounded-full bg-white shadow-md cursor-pointer w-9 h-9"
+                >
+                  <img src="../assets/icon/green-up-right-arrow.png" />
+                </div>
+              </a>
             </div>
           </div>
 
           <!-- Card 6 -->
-          <div class="package-card">
-            <span class="package-tag tag-romantic">Romantic</span>
+          <div
+            class="relative bg-white rounded-xl shadow-md overflow-hidden flex flex-col"
+          >
+            <span
+              class="absolute top-4 left-0 px-3 py-1.5 text-xs font-semibold text-white rounded-r-full rounded-l-md bg-accent-purple"
+              >Popular</span
+            >
 
             <img
-              src="../assets/images/package-image-5.jpg"
+              src="../assets/images/package-image-1.jpg"
               class="w-full h-48 object-cover"
             />
 
-            <div class="package-content">
-              <p class="package-title">Colors Of Kerala Honeymoon</p>
+            <div class="p-5 space-y-3">
+              <p
+                class="font-semibold text-neutral-900 leading-snug text-lg md:text-xl"
+              >
+                Munnar Adventure Trip
+              </p>
 
-              <div class="rating-row">
-                <img src="../assets/icon/star.png" class="w-4 h-4" />
-                <img src="../assets/icon/star.png" class="w-4 h-4" />
-                <img src="../assets/icon/star.png" class="w-4 h-4" />
-                <img src="../assets/icon/star.png" class="w-4 h-4" />
-                <img src="../assets/icon/star.png" class="w-4 h-4" />
+              <div class="flex items-center gap-1">
+                <img src="../assets/icon/star.png" />
+                <img src="../assets/icon/star.png" />
+                <img src="../assets/icon/star.png" />
+                <img src="../assets/icon/star.png" />
+                <img src="../assets/icon/star.png" />
                 <span class="text-base font-medium">(20+ Reviews)</span>
               </div>
 
-              <div class="package-info">
-                <span class="package-title">5 Days</span>
-                <span class="package-titles">₹6099 / $88</span>
+              <div class="flex items-center justify-between">
+                <span
+                  class="font-semibold text-neutral-900 leading-snug text-lg md:text-xl"
+                  >5 Days</span
+                >
+                <span
+                  class="font-semibold text-neutral-900 leading-snug text-lg md:text-xl"
+                  >₹6099 / $88</span
+                >
               </div>
 
-              <button class="btn-book">
+              <a
+                class="w-full flex items-center justify-between bg-brand text-white rounded-full text-sm font-medium pl-5 pr-[5px] py-1 hover:bg-brand-dark transition"
+              >
                 Book now
-                <div class="btn-circle bg-white w-9 h-9">
-                  <img
-                    src="../assets/icon/green-up-right-arrow.png"
-                    class="w-4 h-4"
-                  />
+                <div
+                  class="flex items-center justify-center rounded-full bg-white shadow-md cursor-pointer w-9 h-9"
+                >
+                  <img src="../assets/icon/green-up-right-arrow.png" />
                 </div>
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -2329,153 +2567,70 @@ Footer Section Start
 Footer Section End
 ============================= -->
 
-    <script>
-      const images = [
-        "../assets/images/package-details-carousel-main-image.jpg",
-        "../assets/images/package-details-carousel-thumbnail-image.jpg",
-        "../assets/images/package-details-carousel-thumbnail-image-2.jpg",
-        "../assets/images/package-details-carousel-thumbnail-image-3.jpg",
-        "../assets/images/package-details-carousel-thumbnail-image-4.jpg",
-        "../assets/images/package-details-carousel-thumbnail-image-2.jpg",
-        "../assets/images/package-details-carousel-thumbnail-image.jpg",
-        "../assets/images/package-details-carousel-thumbnail-image-3.jpg",
-      ];
+    <!-- ============================
+ Popup Start
+============================= -->
 
-      let currentIndex = 0;
+    <div
+      id="holidayPopup"
+      class="hidden fixed inset-0 bg-black/60 items-center justify-center p-0 sm:p-4 z-50 transition-opacity duration-300"
+    >
+      <!-- Popup Box -->
+      <div
+        class="popup-box relative w-full max-w-[874px] h-[376px] rounded-2xl flex items-center justify-center px-6 bg-[url('../assets/images/popup-background.jpg')] bg-cover bg-center"
+      >
+        <div
+          class="absolute inset-0 bg-linear-to-b from-black/10 via-black/30 to-black/60"
+        ></div>
+        <!-- Close Popup -->
+        <button
+          id="closePopupBtn"
+          class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center z-10 cursor-pointer bg-white/90 hover:bg-white rounded-full"
+        >
+          ✕
+        </button>
 
-      function showImage(index) {
-        currentIndex = index;
+        <!-- Content -->
+        <div
+          class="flex flex-col items-center text-center text-white w-full px-4 z-10"
+        >
+          <!-- Title -->
+          <h2 class="text-2xl lg:text-[32px] font-semibold leading-tight mb-6">
+            Hey! Are you looking for<br />
+            help in planning your trip?
+          </h2>
 
-        const img = document.getElementById("mainImage");
-        img.classList.remove("fade");
-        void img.offsetWidth;
-        img.src = images[index];
-        img.classList.add("fade");
+          <!-- Input + Button Row -->
+          <div
+            class="flex flex-col items-center gap-3 w-full justify-center max-w-[620px]"
+          >
+            <!-- Input -->
+            <div class="w-full sm:w-auto flex items-center gap-3">
+              <div class="input-rounded w-full sm:w-[350px]">
+                <span class="text-gray-700">+91 -</span>
+                <input class="input-field" placeholder="Enter number" />
+              </div>
+            </div>
 
-        highlightThumbs();
-      }
+            <!-- Link -->
+            <a
+              class="w-full sm:w-[350px] flex items-center justify-between bg-brand text-white rounded-full text-sm font-medium pl-5 pr-[5px] py-1 hover:bg-brand-dark transition"
+            >
+              Get a FREE Holiday Plan
+              <div
+                class="flex items-center justify-center rounded-full bg-white shadow-md cursor-pointer w-9 h-9"
+              >
+                <img src="../assets/icon/green-up-right-arrow.png" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ============================
+ Popup End
+============================= -->
 
-      function nextImage() {
-        currentIndex = (currentIndex + 1) % images.length;
-        showImage(currentIndex);
-      }
-
-      function prevImage() {
-        currentIndex = (currentIndex - 1 + images.length) % images.length;
-        showImage(currentIndex);
-      }
-
-      function highlightThumbs() {
-        document.querySelectorAll(".thumb").forEach((t, i) => {
-          t.classList.remove("border-brand");
-          t.classList.add("border-transparent");
-
-          if (i === currentIndex) {
-            t.classList.remove("border-transparent");
-            t.classList.add("border-brand");
-          }
-        });
-      }
-
-      highlightThumbs();
-
-      // function switchTab(tab) {
-      //   const tabs = ["itinerary", "included", "notincluded"];
-
-      //   tabs.forEach((t) => {
-      //     const button = document.getElementById("tab-" + t);
-      //     const content = document.getElementById("content-" + t);
-      //     const underline = button.querySelector("span");
-
-      //     if (t === tab) {
-      //       // ACTIVE TAB STYLE
-      //       button.classList.add("text-brand", "font-semibold");
-      //       button.classList.remove("text-neutral-700");
-      //       underline.classList.remove("hidden");
-      //       content.classList.add("active");
-      //     } else {
-      //       // INACTIVE TAB STYLE
-      //       button.classList.remove("text-brand");
-      //       button.classList.add("text-neutral-700");
-      //       underline.classList.add("hidden");
-      //       content.classList.remove("active");
-      //     }
-      //   });
-      // }
-
-      // function toggleAccordion(header) {
-      //   const content = header.nextElementSibling;
-      //   const arrow = header.querySelector(".accordion-arrow");
-
-      //   arrow.classList.toggle("rotate");
-      //   content.classList.toggle("active");
-      // }
-    </script>
-    <script>
-      /* ------------------------------
-      SMOOTH SCROLL
-  --------------------------------*/
-      function scrollToSection(id) {
-        const el = document.getElementById(id);
-        const offset = 120; // adjust based on sticky tab height
-
-        window.scrollTo({
-          top: el.offsetTop - offset,
-          behavior: "smooth",
-        });
-      }
-
-      /* ------------------------------
-      SCROLL to bottom
-  --------------------------------*/
-      const sections = document.querySelectorAll(".scroll-section");
-      const tabs = {
-        "section-itinerary": document.getElementById("tab-itinerary"),
-        "section-included": document.getElementById("tab-included"),
-        "section-notincluded": document.getElementById("tab-notincluded"),
-      };
-
-      window.addEventListener("scroll", () => {
-        let current = "";
-
-        sections.forEach((sec) => {
-          const secTop = sec.offsetTop - 350;
-          const secHeight = sec.offsetHeight;
-          const secBottom = secTop + secHeight;
-
-          // more accurate section detection
-          if (window.scrollY >= secTop && window.scrollY < secBottom) {
-            current = sec.id;
-          }
-        });
-
-        // reset all
-        Object.values(tabs).forEach((tab) => {
-          tab.classList.remove("text-brand");
-          tab.classList.add("text-neutral-700");
-          tab.querySelector(".tab-underline").classList.add("hidden");
-        });
-
-        // activate correct tab
-        if (tabs[current]) {
-          tabs[current].classList.add("text-brand");
-          tabs[current].classList.remove("text-neutral-700");
-          tabs[current]
-            .querySelector(".tab-underline")
-            .classList.remove("hidden");
-        }
-      });
-
-      /* ------------------------------
-      ACCORDION
-  --------------------------------*/
-      function toggleAccordion(header) {
-        const content = header.nextElementSibling;
-        const arrow = header.querySelector(".accordion-arrow");
-
-        content.classList.toggle("active");
-        arrow.classList.toggle("rotate-180");
-      }
-    </script>
+    <script src="./main.js"></script>
   </body>
 </html>
