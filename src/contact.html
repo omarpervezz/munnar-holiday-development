@@ -467,61 +467,119 @@
          Contact Banner End
          ============================ -->
     <!-- ============================
-     Contact Form Start
+     Contact Form (embedded) Start
      ============================ -->
 
-    <section class="bg-white py-12">
-      <div class="container">
-        <div id="wufoo-z1sepk8f1wll0t1">
-          Fill out my
-          <a href="https://irisholidays.wufoo.com/forms/z1sepk8f1wll0t1"
-            >online form</a
-          >.
+    <section class="bg-white py-6 lg:py-12">
+      <div class="container mx-auto px-4">
+        <!-- Wrapper for 2 columns -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+          <!-- LEFT: WuFoo Form -->
+          <div class="lg:col-span-2">
+            <div id="wufoo-z1sepk8f1wll0t1">
+              Fill out my
+              <a href="https://irisholidays.wufoo.com/forms/z1sepk8f1wll0t1"
+                >online form</a
+              >.
+            </div>
+
+            <script type="text/javascript">
+              var z1sepk8f1wll0t1;
+              (function (d, t) {
+                var s = d.createElement(t),
+                  options = {
+                    userName: "irisholidays",
+                    formHash: "z1sepk8f1wll0t1",
+                    autoResize: true,
+                    height: "850",
+                    async: true,
+                    host: "wufoo.com",
+                    header: "show",
+                    ssl: true,
+                  };
+
+                s.src = "https://www.wufoo.com/scripts/embed/form.js";
+                s.onload = s.onreadystatechange = function () {
+                  var rs = this.readyState;
+                  if (rs) {
+                    if (rs != "complete") if (rs != "loaded") return;
+                  }
+                  try {
+                    z1sepk8f1wll0t1 = new WufooForm();
+                    z1sepk8f1wll0t1.initialize(options);
+                    z1sepk8f1wll0t1.display();
+                  } catch (e) {}
+                };
+
+                var scr = d.getElementsByTagName(t)[0];
+                scr.parentNode.insertBefore(s, scr);
+              })(document, "script");
+            </script>
+          </div>
+
+          <!-- RIGHT: Contact Info Card -->
+          <div class="w-full">
+            <div class="rounded-xl border border-light p-6 space-y-6">
+              <!-- Email -->
+              <div class="flex items-start gap-4">
+                <img
+                  src="../assets/icon/mail.png"
+                  class="w-6 h-6 mt-1"
+                  alt="email icon"
+                />
+                <div>
+                  <p class="text-sm text-gray-500 font-medium">
+                    Write us an e-mail
+                  </p>
+                  <p class="text-gray-800 font-semibold break-all">
+                    team@munnar.holiday
+                  </p>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="flex items-start gap-4">
+                <img
+                  src="../assets/icon/phone-call.png"
+                  class="w-6 h-6 mt-1"
+                  alt="phone icon"
+                />
+                <div>
+                  <p class="text-sm text-gray-500 font-medium">Call us</p>
+                  <p class="text-gray-800 font-semibold">+91 999 5400 476</p>
+                  <p class="text-gray-800 font-semibold">+91 989 524 0611</p>
+                </div>
+              </div>
+
+              <!-- Address -->
+              <div class="flex items-start gap-4">
+                <img
+                  src="../assets/icon/contact_support.png"
+                  class="w-6 h-6 mt-1"
+                  alt="address icon"
+                />
+                <div>
+                  <p class="text-sm text-gray-500 font-medium">Address</p>
+                  <p class="text-gray-800 font-semibold leading-relaxed">
+                    40/ 2770 A, Millennium Nagar P.O. Box:<br />
+                    Edappally Kochi Kerala 682024 India
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <script type="text/javascript">
-          var z1sepk8f1wll0t1;
-          (function (d, t) {
-            var s = d.createElement(t),
-              options = {
-                userName: "irisholidays",
-                formHash: "z1sepk8f1wll0t1",
-                autoResize: true,
-                height: "850",
-                async: true,
-                host: "wufoo.com",
-                header: "show",
-                ssl: true,
-              };
-
-            s.src = "https://www.wufoo.com/scripts/embed/form.js";
-            s.onload = s.onreadystatechange = function () {
-              var rs = this.readyState;
-              if (rs) {
-                if (rs != "complete") if (rs != "loaded") return;
-              }
-              try {
-                z1sepk8f1wll0t1 = new WufooForm();
-                z1sepk8f1wll0t1.initialize(options);
-                z1sepk8f1wll0t1.display();
-              } catch (e) {}
-            };
-
-            var scr = d.getElementsByTagName(t)[0];
-            scr.parentNode.insertBefore(s, scr);
-          })(document, "script");
-        </script>
       </div>
     </section>
 
     <!-- ============================
-     Contact Form End
+     Contact Form (embedded) End
      ============================ -->
 
     <!-- ============================
          Loving Testimonials Section Start
           ============================ -->
-    <section class="w-full py-12">
+    <section class="w-full py-6 lg:py-12">
       <div class="container">
         <div class="chip mb-4">
           <div class="chip-icon">
@@ -739,7 +797,7 @@
     <!-- ============================
          Munnar Insider Blog - Latest Posts Section Start
          ============================ -->
-    <section class="w-full py-12 bg-mint">
+    <section class="w-full py-6 lg:py-12 bg-mint">
       <div class="container">
         <!-- Chip -->
         <div class="chip mb-4">
@@ -1031,7 +1089,7 @@ FAQ Section End
     <!-- ============================
          Planning Holiday Section Start
          ============================= -->
-    <section class="w-full py-12">
+    <section class="w-full py-6 lg:py-12">
       <div class="container text-center">
         <!-- Chip -->
         <div class="chip mx-auto mb-6 w-fit">
@@ -1067,7 +1125,7 @@ FAQ Section End
     <!-- ============================
          Contact & Useful Links Section Start
          ============================= -->
-    <section class="w-full py-12 bg-[#F7F7F7]">
+    <section class="w-full py-6 lg:py-12 bg-[#F7F7F7]">
       <div class="container">
         <!-- Top Contact Row -->
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 text-center mb-16">

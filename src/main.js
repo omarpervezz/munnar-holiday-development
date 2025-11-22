@@ -10,7 +10,7 @@
    ========================================================================= */
 (function () {
   const mobileMenu = document.getElementById("mobileMenu");
-  if (!mobileMenu) return; // No mobile menu on this page → skip everything
+  if (!mobileMenu) return;
 
   const mobileOverlay = document.getElementById("mobileOverlay");
   const openBtn = document.getElementById("openMenuBtn");
@@ -51,7 +51,7 @@
   }
 
   /* -------------------------------
-     Event Listeners (Safe Checks)
+     Event Listeners 
   -------------------------------- */
   if (openBtn) openBtn.addEventListener("click", openMobileMenu);
   if (closeBtn) closeBtn.addEventListener("click", closeMobileMenu);
@@ -81,7 +81,7 @@ if (textEl) {
       name: "Aleena Paul",
       location: "Mumbai",
       photo: "../assets/images/package-image-2.jpg",
-      bg: "../assets/images/testimonials-image.jpg",
+      bg: "../assets/images/package-image-1.jpg",
     },
     {
       text: `Booking my trip through Munnar.Holiday was one of the best decisions I’ve ever made...`,
