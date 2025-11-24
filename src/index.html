@@ -460,9 +460,9 @@
             for Munnar in Kerala
           </h1>
 
-          <div class="w-full max-w-3xl px-2 sm:px-0 mt-5 lg:mt-10">
+          <div class="w-full max-w-3xl px-2 sm:px-0 mt-5 lg:mt-10 relative">
             <div
-              class="bg-white w-full rounded-full flex items-center shadow-lg px-5 py-2 gap-3"
+              class="bg-white w-full rounded-full flex items-center px-5 py-2 gap-3"
             >
               <div class="btn-circle bg-white w-9 h-9 hidden sm:flex">
                 <img
@@ -473,11 +473,18 @@
               </div>
 
               <input
+                id="heroSearch"
                 type="text"
                 placeholder="I want to"
                 class="flex-1 outline-none text-gray-700 text-base"
               />
             </div>
+
+            <!-- 🔽 Suggestion Dropdown -->
+            <ul
+              id="searchSuggestions"
+              class="absolute left-0 right-0 mt-0 bg-white border-t border-light shadow-md rounded-xl hidden z-50 w-full max-w-[740px] mx-auto"
+            ></ul>
           </div>
 
           <div
