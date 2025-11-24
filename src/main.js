@@ -351,3 +351,88 @@ if (popup) {
     arrow.classList.toggle("rotate-180");
   };
 })();
+
+/* =========================================================================
+      HERO SEARCH BOX WITH DROPDOWN SUGGESTIONS
+   ========================================================================= */
+(function () {
+  const input = document.getElementById("heroSearch");
+  const dropdown = document.getElementById("searchSuggestions");
+
+  if (!input || !dropdown) return;
+
+  // Suggestion List
+  const suggestions = [
+    "Visit London's top attractions",
+    "Find the best family activities",
+    "Explore London itineraries",
+    "Join immersive experiences",
+    "See the latest exhibitions",
+    "Take a day trip from London",
+    "Discover Christmas experiences",
+    "Find a place to stay in London",
+  ];
+
+  /* ----------------------------------------------------------
+     Render Suggestion Items
+  ---------------------------------------------------------- */
+  function renderSuggestions(list) {
+    dropdown.innerHTML = "";
+
+    list.forEach((item) => {
+      const li = document.createElement("li");
+      li.className =
+        "px-4 py-2 hover:bg-brand hover:text-white cursor-pointer text-neutral-900 text-sm lg:text-base text-left";
+
+      li.textContent = item;
+
+      li.addEventListener("click", () => {
+        input.value = item;
+        dropdown.classList.add("hidden");
+      });
+
+      dropdown.appendChild(li);
+    });
+
+    dropdown.classList.remove("hidden");
+  }
+
+  /* ----------------------------------------------------------
+     Input Typing Filter
+  ---------------------------------------------------------- */
+  input.addEventListener("input", () => {
+    const query = input.value.toLowerCase();
+
+    const filtered = suggestions.filter((item) =>
+      item.toLowerCase().includes(query)
+    );
+
+    if (filtered.length === 0) {
+      dropdown.classList.add("hidden");
+      return;
+    }
+
+    renderSuggestions(filtered);
+  });
+
+  /* ----------------------------------------------------------
+     Show all suggestions on focus (if input empty)
+  ---------------------------------------------------------- */
+  input.addEventListener("focus", () => {
+    if (input.value === "") {
+      renderSuggestions(suggestions);
+    }
+  });
+
+  /* ----------------------------------------------------------
+     Hide when clicking outside
+  ---------------------------------------------------------- */
+  document.addEventListener("click", (e) => {
+    if (
+      !e.target.closest("#heroSearch") &&
+      !e.target.closest("#searchSuggestions")
+    ) {
+      dropdown.classList.add("hidden");
+    }
+  });
+})();
